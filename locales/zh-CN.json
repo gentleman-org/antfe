@@ -1,0 +1,109 @@
+{
+  "homePage": {
+    "title": "Next.js AI Starter",
+    "subtitle": "终极现代化Web开发工具包",
+    "description": "生产就绪的Next.js模板，集成AI功能、国际化、暗黑模式和前沿UI组件。为想要快速交付的开发者而构建。",
+    "getStarted": "开始使用",
+    "learnMore": "查看GitHub",
+    "openSource": "🎉 开源免费",
+    "features": {
+      "ai": {
+        "title": "AI驱动",
+        "description": "内置AI集成和现代化API，为您的下一个智能应用做好准备"
+      },
+      "modern": {
+        "title": "现代技术栈",
+        "description": "Next.js 15、TypeScript、Tailwind CSS 和最新的Web技术"
+      },
+      "i18n": {
+        "title": "国际化支持",
+        "description": "完整的i18n支持，使用next-intl，可全球部署"
+      },
+      "performance": {
+        "title": "性能优先",
+        "description": "使用服务器组件、边缘运行时和智能缓存进行速度优化"
+      }
+    }
+  },
+  "layout": {
+    "title": "Next.js AI Starter",
+    "menu": "菜单",
+    "search": "搜索",
+    "home": "首页",
+    "features": "特性",
+    "docs": "文档",
+    "examples": "示例",
+    "about": "关于",
+    "github": "GitHub"
+  },
+  "header": {
+    "navigation": {
+      "home": "首页",
+      "features": "特性",
+      "docs": "文档",
+      "examples": "示例",
+      "about": "关于",
+      "github": "GitHub"
+    },
+    "actions": {
+      "search": "搜索",
+      "notifications": "通知",
+      "profile": "个人资料",
+      "settings": "设置"
+    }
+  },
+  "footer": {
+    "project": {
+      "title": "项目",
+      "github": "GitHub仓库",
+      "documentation": "文档",
+      "examples": "示例",
+      "changelog": "更新日志"
+    },
+    "community": {
+      "title": "社区",
+      "discussions": "讨论",
+      "issues": "问题反馈",
+      "contributing": "贡献指南",
+      "discord": "Discord"
+    },
+    "resources": {
+      "title": "资源",
+      "nextjs": "Next.js",
+      "tailwind": "Tailwind CSS",
+      "typescript": "TypeScript",
+      "vercel": "部署到Vercel"
+    },
+    "legal": {
+      "title": "法律",
+      "license": "MIT许可证",
+      "terms": "使用条款",
+      "privacy": "隐私政策",
+      "security": "安全政策"
+    },
+    "social": {
+      "title": "关注更新",
+      "twitter": "推特",
+      "github": "GitHub",
+      "linkedin": "领英",
+      "discord": "Discord"
+    },
+    "newsletter": {
+      "title": "保持更新",
+      "description": "获取新功能和更新通知",
+      "placeholder": "输入您的邮箱",
+      "subscribe": "订阅"
+    },
+    "copyright": "© 2024 Next.js AI Starter. MIT许可证开源项目。",
+    "poweredBy": "基于 Next.js 和 AI 构建"
+  },
+  "localeSwitcher": {
+    "label": "中文",
+    "locale": "{locale, select, en {English} zhCN {中文} other {Unknown}}"
+  },
+  "offline": {
+    "title": "Next.js AI Starter",
+    "description": "现代化Web开发起始套件",
+    "tips": "请检查您的网络连接"
+  }
+}
