@@ -1,29 +1,25 @@
 'use client';
 
-import clsx from 'clsx';
 import { useParams } from 'next/navigation';
-import { ChangeEvent, ReactNode, useTransition } from 'react';
+import { useTransition } from 'react';
 import { Locale } from '~/lib/i18n/routing';
 import { usePathname, useRouter } from '~/lib/i18n/navigation';
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '~/components/ui/select';
 
 type Props = {
-  children: ReactNode;
   defaultValue: string;
   label: string;
+  options: Array<{ value: string; label: string }>;
 };
 
-export default function LocaleSwitcherSelect({
-  children,
-  defaultValue,
-  label
-}: Props) {
+export default function LocaleSwitcherSelect({ defaultValue, label, options }: Props) {
   const router = useRouter();
   const [isPending, startTransition] = useTransition();
   const pathname = usePathname();
   const params = useParams();
 
-  function onSelectChange(event: ChangeEvent<HTMLSelectElement>) {
-    const nextLocale = event.target.value as Locale;
+  function onSelectChange(value: string) {
+    const nextLocale = value as Locale;
     startTransition(() => {
       router.replace(
         // @ts-expect-error -- TypeScript will validate that only known `params`
@@ -36,22 +32,20 @@ export default function LocaleSwitcherSelect({
   }
 
   return (
-    <label
-      className={clsx(
-        'relative text-gray-400',
-        isPending && 'transition-opacity [&:disabled]:opacity-30'
-      )}
-    >
-      <p className="sr-only">{label}</p>
-      <select
-        className="inline-flex appearance-none bg-transparent py-3 pl-2 pr-6"
-        defaultValue={defaultValue}
-        disabled={isPending}
-        onChange={onSelectChange}
-      >
-        {children}
-      </select>
-      <span className="pointer-events-none absolute right-2 top-[8px]">⌄</span>
-    </label>
+    <div className="relative">
+      <span className="sr-only">{label}</span>
+      <Select value={defaultValue} onValueChange={onSelectChange} disabled={isPending}>
+        <SelectTrigger className="liquid-glass-button min-w-[80px] border-white/20 bg-white/10 backdrop-blur-sm transition-all duration-300 hover:bg-white/20 dark:border-white/10 dark:bg-white/5 dark:hover:bg-white/10">
+          <SelectValue />
+        </SelectTrigger>
+        <SelectContent className="liquid-glass-dropdown">
+          {options.map((option) => (
+            <SelectItem key={option.value} value={option.value} className="cursor-pointer">
+              {option.label}
+            </SelectItem>
+          ))}
+        </SelectContent>
+      </Select>
+    </div>
   );
 }

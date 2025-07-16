@@ -2,7 +2,7 @@
 
 import { useTranslations } from 'next-intl';
 import { useState, useEffect } from 'react';
-import { Menu, X, Search, Bell, User, Settings, Zap, Github } from 'lucide-react';
+import { Menu, X, Search, Bell, User, Settings, Zap, Github, MessageCircle } from 'lucide-react';
 import { Button } from '~/components/ui/button';
 import { ThemeToggle } from '~/components/themeToggle';
 import LocaleSwitcher from '~/components/langSelect/localeSwitcher';
@@ -28,15 +28,16 @@ export default function Header() {
 
   const navigation = [
     { name: t('header.navigation.home'), href: '/' },
-    { name: t('header.navigation.features'), href: '/features' },
-    { name: t('header.navigation.docs'), href: '/docs' },
-    { name: t('header.navigation.examples'), href: '/examples' },
-    { name: t('header.navigation.about'), href: '/about' },
+    { name: t('header.navigation.community'), href: 'https://dc.antfe.com' },
+    { name: t('header.navigation.articles'), href: '/articles' },
+    { name: t('header.navigation.projects'), href: '/projects' },
+    { name: t('header.navigation.developers'), href: '/developers' },
+    { name: t('header.navigation.events'), href: '/events' },
   ];
 
   return (
     <>
-      <header className={`fixed top-0 right-0 left-0 z-50 transition-all duration-700 ease-out ${isScrolled ? 'liquid-glass-header-scrolled' : 'liquid-glass-header'} `}>
+      <header className={`sticky top-0 right-0 left-0 z-50 transition-all duration-700 ease-out ${isScrolled ? 'liquid-glass-header-scrolled' : 'liquid-glass-header'} `}>
         {/* 动态彩虹光线 */}
         <div className="through-purple-500/60 absolute top-0 right-0 left-0 h-px animate-pulse bg-gradient-to-r from-transparent via-blue-500/60 to-transparent" />
 
@@ -87,8 +88,15 @@ export default function Header() {
               <div className="flex items-center space-x-2">
                 {/* GitHub按钮 */}
                 <Button variant="ghost" size="icon" className="liquid-glass-button" asChild>
-                  <Link href="https://github.com/vadxq/nextjs-ai-starter" target="_blank" rel="noopener noreferrer">
+                  <Link href="https://github.com/gentleman-org/antfe" target="_blank" rel="noopener noreferrer">
                     <Github className="h-4 w-4" />
+                  </Link>
+                </Button>
+
+                {/* Discord按钮 */}
+                <Button variant="ghost" size="icon" className="liquid-glass-button group relative" asChild title={t('header.actions.discord')}>
+                  <Link href="https://discord.gg/antfe" target="_blank" rel="noopener noreferrer">
+                    <MessageCircle className="h-4 w-4 transition-colors duration-200 group-hover:text-blue-500" />
                   </Link>
                 </Button>
 

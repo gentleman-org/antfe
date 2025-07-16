@@ -1,21 +1,23 @@
-# Next.js AI Starter 项目技术文档
+# AntFE 程序员社区
 
-## 📋 项目概览
+## 🌟 项目概览
 
-**Next.js AI Starter** 是一个现代化的 Web 开发模板，集成了 AI 功能、国际化支持、PWA 能力和前沿 UI 设计。专为追求高效开发和现代化体验的开发者设计。
+**AntFE 程序员社区** 是一个专为程序员打造的现代化技术交流平台，致力于连接全球优秀开发者，分享前沿技术、讨论编程实践、构建开源项目。在这里，每个程序员都能找到志同道合的伙伴。
 
-### 🎯 项目特色
+### 🎯 社区特色
 
-- 🚀 **生产就绪**: 基于最新技术栈，开箱即用
-- 🎨 **液态玻璃设计**: iOS26 风格的现代化 UI 效果
-- 🌍 **国际化支持**: 完整的多语言解决方案
-- 🔧 **类型安全**: 100% TypeScript 支持
-- ⚡ **性能优化**: 服务器组件、边缘运行时、智能缓存
-- 📱 **PWA 支持**: 离线功能和原生应用体验
+- 🚀 **技术交流**: 与全球优秀程序员分享经验，讨论最新技术趋势
+- 🎨 **现代设计**: 基于液态玻璃设计，提供优雅的用户体验
+- 🌍 **多元文化**: 支持多语言交流，连接不同国家和地区的开发者
+- 🔧 **开源精神**: 拥抱开源文化，共同构建更好的开发者生态
+- ⚡ **高性能**: 基于 Next.js 15 构建，享受极致的浏览体验
+- 📱 **PWA 支持**: 移动端原生应用体验
 
 ---
 
-## 🛠 核心技术栈
+## 🛠 技术架构
+
+**基于模版：[nextjs-ai-starter](https://github.com/vadxq/nextjs-ai-starter)**
 
 ### 前端框架
 
@@ -27,41 +29,22 @@
 
 - **Tailwind CSS 4.1** - 原子化 CSS 框架
 - **Shadcn UI** - 基于 Radix UI 的组件库
-- **Radix UI** - 无样式、可访问的 UI 组件
+- **液态玻璃设计** - iOS26 风格的现代化 UI 效果
 - **Lucide React** - 现代化图标库
-- **CVA (Class Variance Authority)** - 组件样式变体管理
 
-### 状态管理和数据获取
+### 功能特性
 
 - **SWR 2.3** - 数据获取和缓存
-- **Zustand 5.0** - 轻量级状态管理
-- **自定义 HTTP 客户端** - 基于 SWR 的类型安全 API 调用
-
-### 国际化和主题
-
 - **Next-intl 4.3** - 国际化解决方案
 - **Next-themes 0.4** - 主题切换支持
-- **支持语言**: 英语(en)、简体中文(zh-CN)
-
-### PWA 和性能
-
-- **Serwist 9.0** - 下一代 Service Worker 库
-- **Web Vitals 监控** - 性能指标收集
-- **图像优化** - 支持 AVIF/WebP 格式
-
-### 开发工具
-
-- **ESLint + Prettier** - 代码质量和格式化
-- **Husky + Lint-staged** - Git Hooks 和预提交检查
-- **Commitlint** - 提交信息规范
-- **Conventional Changelog** - 自动生成变更日志
+- **Serwist 9.0** - PWA 和 Service Worker
 
 ---
 
 ## 📁 项目结构
 
 ```bash
-nextjs-ai-starter/
+antfe/
 ├── app/                          # Next.js App Router
 │   ├── [locale]/                # 国际化路由
 │   │   ├── layout.tsx           # 全局布局
@@ -69,17 +52,14 @@ nextjs-ai-starter/
 │   │   └── ~offline/            # PWA 离线页面
 │   ├── api/                     # API 路由
 │   ├── manifest.ts              # PWA 清单
-│   ├── robots.ts                # SEO robots.txt
 │   └── sw.ts                    # Service Worker
 ├── components/                   # React 组件
 │   ├── ui/                      # Shadcn UI 组件
 │   ├── layout/                  # 布局组件
-│   │   ├── header.tsx           # 导航头部
+│   │   ├── header.tsx           # 社区导航
 │   │   ├── footer.tsx           # 页脚
 │   │   └── pageLayout.tsx       # 页面布局
 │   ├── provider/                # Context 提供者
-│   ├── langSelect/              # 语言切换
-│   ├── metrics/                 # 性能监控
 │   └── themeToggle.tsx          # 主题切换
 ├── lib/                         # 工具库
 │   ├── http/                    # HTTP 客户端
@@ -88,76 +68,37 @@ nextjs-ai-starter/
 ├── locales/                     # 语言文件
 │   ├── en.json                  # 英文
 │   └── zh-CN.json               # 中文
-├── styles/                      # 样式文件
-│   └── globals.css              # 全局样式（含液态玻璃效果）
-├── public/                      # 静态资源
-└── 配置文件                      # 各种配置文件
+└── styles/                      # 样式文件
+    └── globals.css              # 全局样式（含液态玻璃效果）
 ```
 
 ---
 
-## ✨ 核心特性详解
+## ✨ 社区功能
 
-### 1. 🎨 液态玻璃 UI 设计
+### 🤝 技术交流
 
-- **iOS26 风格效果**: 模糊背景、渐变边框、动态光效
-- **响应式交互**: 悬停、点击、滚动状态变化
-- **无障碍支持**: 完整的键盘导航和屏幕阅读器支持
+- **技术讨论**: 参与各种编程语言和技术框架的深度讨论
+- **经验分享**: 分享项目经验、最佳实践和踩坑记录
+- **代码评审**: 获得社区成员的代码反馈和建议
 
-```css
-/* 核心液态玻璃类 */
-.liquid-glass-header
-.liquid-glass-button
-.liquid-glass-card
-.liquid-glass-dropdown
-```
+### 🌍 开源项目
 
-### 2. 🌍 国际化系统
+- **项目展示**: 展示你的开源项目，获得社区关注
+- **协作开发**: 与其他开发者一起构建有趣的项目
+- **技能提升**: 通过参与开源项目提升编程技能
 
-- **服务端渲染**: SEO 友好的多语言支持
-- **动态语言切换**: 无页面刷新的语言切换
-- **类型安全**: TypeScript 支持的翻译键检查
+### 💼 职业发展
 
-```tsx
-// 使用示例
-const t = useTranslations('homePage');
-const title = t('title'); // 类型安全的翻译
-```
+- **面试指导**: 获取技术面试经验和建议
+- **职业规划**: 与资深开发者讨论职业发展路径
+- **人才推荐**: 发现优秀的工作机会和人才
 
-### 3. 📱 PWA 功能
+### 📚 学习资源
 
-- **离线支持**: 使用 Serwist 实现的离线功能
-- **缓存策略**: 智能的资源缓存和更新
-- **安装提示**: 原生应用安装体验
-
-### 4. 🔄 HTTP 客户端
-
-- **SWR 集成**: 自动缓存、重新验证、错误重试
-- **类型安全**: 完整的 TypeScript 支持
-- **服务端支持**: SSR 和 Server Actions 兼容
-
-```tsx
-// 客户端使用
-const { data, error, isLoading } = useQuery<User[]>('/api/users');
-
-// 服务端使用
-const users = await createCachedQuery(() => api.get('/users'), {
-  key: ['users'],
-  revalidate: 3600,
-});
-```
-
-### 5. 🎨 主题系统
-
-- **多主题支持**: 明亮、暗黑、系统主题
-- **无闪烁切换**: 预防主题切换时的闪烁
-- **本地存储**: 主题偏好持久化
-
-### 6. 📊 性能监控
-
-- **Web Vitals**: LCP、FID、CLS 等核心指标
-- **自动上报**: 性能数据自动收集
-- **分析端点**: `/api/metrics` 数据接收
+- **技术文章**: 阅读社区成员分享的高质量技术文章
+- **在线课程**: 参与社区组织的技术培训和研讨会
+- **开发工具**: 发现和分享有用的开发工具和资源
 
 ---
 
@@ -168,15 +109,15 @@ const users = await createCachedQuery(() => api.get('/users'), {
 - Node.js 22+
 - Git
 
-### 2. 安装和启动
+### 2. 本地运行
 
 ```bash
 # 克隆项目
-git clone https://github.com/vadxq/nextjs-ai-starter.git
-cd nextjs-ai-starter
+git clone https://github.com/gentleman-org/antfe.git
+cd antfe
 
 # 安装依赖
-npm run install
+npm install
 
 # 启动开发服务器
 npm run dev
@@ -193,7 +134,6 @@ npm run start
 ```bash
 # 代码检查和格式化
 npm run lint              # 运行 ESLint + Prettier
-npm run lint:lint-staged  # 仅检查暂存文件
 npm run lint:pretty       # 快速格式化
 
 # 生成变更日志
@@ -202,230 +142,74 @@ npm run log               # 基于 Git 提交生成 CHANGELOG
 
 ---
 
-## 🔧 开发指南
+## 🌟 社区数据
 
-### 1. 添加新语言
-
-1. 在 `lib/i18n/routing.ts` 中添加语言代码：
-
-```typescript
-export const routing = defineRouting({
-  locales: ['en', 'zh-CN', 'ja'], // 添加 'ja'
-  defaultLocale: 'en',
-});
-```
-
-2. 创建语言文件 `locales/ja.json`
-3. 在 `middleware.ts` 中更新路由匹配规则
-
-### 2. 创建新组件
-
-使用 Shadcn UI 添加组件：
-
-```bash
-npx shadcn-ui@latest add button
-npx shadcn-ui@latest add dialog
-```
-
-### 3. 添加液态玻璃效果
-
-在 `styles/globals.css` 中使用预定义类：
-
-```tsx
-<div className="liquid-glass-card">
-  <button className="liquid-glass-button">按钮</button>
-</div>
-```
-
-### 4. API 路由开发
-
-```typescript
-// app/api/example/route.ts
-import { NextResponse } from 'next/server';
-
-export async function GET() {
-  return NextResponse.json({ message: 'Hello API' });
-}
-```
-
-### 5. 环境变量
-
-创建 `.env.local` 文件：
-
-```env
-# API 配置
-NEXT_PUBLIC_API_URL=https://api.example.com
-
-# 数据库配置
-DATABASE_URL=postgresql://...
-
-# AI 服务配置
-OPENAI_API_KEY=sk-...
-```
+- 🧑‍💻 **1000+** 活跃开发者
+- 📝 **500+** 技术文章
+- 🔧 **100+** 开源项目
+- 🌍 **24/7** 社区活动
 
 ---
 
-## 📋 TODO 清单
+## 📋 发展计划
 
-### 🎯 高优先级
+### 🎯 近期目标
 
-- [ ] **AI 功能集成**
-  - [ ] OpenAI API 集成
-  - [ ] 聊天机器人组件
-  - [ ] AI 文本生成功能
-  - [ ] 智能代码补全
-
-- [ ] **数据库集成**
-  - [ ] Prisma ORM 配置
-  - [ ] 数据库 Schema 设计
-  - [ ] 用户认证系统
-  - [ ] 数据迁移脚本
-
-- [ ] **认证系统**
-  - [ ] NextAuth.js 集成
-  - [ ] OAuth 登录 (Google, GitHub)
-  - [ ] JWT Token 管理
+- [ ] **用户系统**
+  - [ ] 用户注册和登录
+  - [ ] 个人资料管理
   - [ ] 用户权限系统
 
-### 🛠 中优先级
+- [ ] **社区功能**
+  - [ ] 技术讨论区
+  - [ ] 文章发布系统
+  - [ ] 项目展示平台
+  - [ ] 评论和点赞功能
 
-- [ ] **组件库扩展**
-  - [ ] 表单验证组件
-  - [ ] 数据表格组件
-  - [ ] 图表组件集成
-  - [ ] 文件上传组件
+- [ ] **内容管理**
+  - [ ] 文章编辑器
+  - [ ] 代码高亮
+  - [ ] 图片上传
+  - [ ] 标签系统
 
-- [ ] **开发体验**
-  - [ ] Storybook 集成
-  - [ ] 组件测试 (Jest + Testing Library)
-  - [ ] E2E 测试 (Playwright)
-  - [ ] 代码覆盖率报告
+### 🛠 中期计划
 
-- [ ] **部署优化**
-  - [ ] Docker 配置
-  - [ ] CI/CD Pipeline (GitHub Actions)
-  - [ ] 自动化部署脚本
-  - [ ] 性能监控 Dashboard
+- [ ] **高级功能**
+  - [ ] 实时聊天系统
+  - [ ] 视频会议集成
+  - [ ] 在线代码编辑器
+  - [ ] AI 助手集成
 
-### 🔍 低优先级
+- [ ] **移动应用**
+  - [ ] 离线阅读功能
+  - [ ] 推送通知
 
-- [ ] **功能增强**
-  - [ ] 搜索功能
-  - [ ] 通知系统
-  - [ ] 实时消息 (WebSocket)
-  - [ ] 文档站点 (Nextra)
+### 🔍 长期愿景
 
-- [ ] **多语言扩展**
-  - [ ] 日语支持
-  - [ ] 韩语支持
-  - [ ] 阿拉伯语支持
-  - [ ] RTL 布局支持
+- [ ] **全球化**
+  - [ ] 多语言支持扩展
+  - [ ] 国际社区运营
+  - [ ] 本地化活动
 
----
-
-## 🔧 自定义配置
-
-### 修改主题颜色
-
-在 `styles/globals.css` 中修改 CSS 变量：
-
-```css
-:root {
-  --primary: oklch(0.21 0.006 285.885); /* 主色调 */
-  --secondary: oklch(0.967 0.001 286.375); /* 次要色调 */
-  --accent: oklch(0.967 0.001 286.375); /* 强调色 */
-}
-```
-
-### 修改 Tailwind 配置
-
-在 `tailwind.config.ts` 中自定义：
-
-```typescript
-export default {
-  theme: {
-    extend: {
-      colors: {
-        brand: {
-          50: '#eff6ff',
-          500: '#3b82f6',
-          900: '#1e3a8a',
-        },
-      },
-    },
-  },
-};
-```
-
-### PWA 配置
-
-在 `app/manifest.ts` 中修改 PWA 设置：
-
-```typescript
-export default function manifest(): MetadataRoute.Manifest {
-  return {
-    name: '您的应用名称',
-    short_name: '短名称',
-    description: '应用描述',
-    // ... 其他配置
-  };
-}
-```
+- [ ] **商业化**
+  - [ ] 企业版功能
+  - [ ] 付费课程平台
+  - [ ] 人才招聘服务
 
 ---
 
-## 📈 性能优化建议
+## 🤝 参与贡献
 
-### 1. 图像优化
+我们欢迎所有形式的贡献！
 
-- 使用 Next.js Image 组件
-- 启用 AVIF/WebP 格式
-- 配置适当的图像尺寸
+### 贡献方式
 
-### 2. 代码分割
+1. **代码贡献**: 修复 Bug、新增功能、性能优化
+2. **文档改进**: 完善文档、翻译内容
+3. **社区运营**: 组织活动、内容审核、用户支持
+4. **反馈建议**: 提出改进建议、报告问题
 
-- 使用动态导入
-- 按路由分割代码
-- 懒加载非关键组件
-
-### 3. 缓存策略
-
-- API 响应缓存
-- 静态资源缓存
-- Service Worker 缓存
-
-### 4. 性能监控
-
-- Web Vitals 追踪
-- 用户体验指标
-- 错误监控集成
-
----
-
-## 🤝 贡献指南
-
-### 1. 提交规范
-
-使用 Conventional Commits 格式：
-
-```bash
-feat: 添加新功能
-fix: 修复问题
-docs: 文档更新
-style: 代码格式调整
-refactor: 代码重构
-test: 添加测试
-chore: 构建过程或辅助工具的变动
-```
-
-### 2. 分支策略
-
-- `main`: 生产分支
-- `develop`: 开发分支
-- `feature/*`: 功能分支
-- `hotfix/*`: 热修复分支
-
-### 3. Pull Request 流程
+### 贡献流程
 
 1. Fork 项目
 2. 创建功能分支
@@ -438,31 +222,33 @@ chore: 构建过程或辅助工具的变动
 
 ## 📚 相关资源
 
-### 官方文档
+### 官方链接
 
-- [Next.js 15 文档](https://nextjs.org/docs)
-- [React 19 文档](https://react.dev)
-- [Tailwind CSS 文档](https://tailwindcss.com/docs)
-- [Shadcn UI 文档](https://ui.shadcn.com)
+- [GitHub 仓库](https://github.com/gentleman-org/antfe)
+- [在线预览](https://antfe.com)
+- [技术文档](https://github.com/gentleman-org/antfe/wiki)
+- [问题反馈](https://github.com/gentleman-org/antfe/issues)
 
 ### 社区资源
 
-- [GitHub Repository](https://github.com/vadxq/nextjs-ai-starter)
-- [讨论区](https://github.com/vadxq/nextjs-ai-starter/discussions)
-- [问题反馈](https://github.com/vadxq/nextjs-ai-starter/issues)
+- [Discord 群组](https://dc.antfe.com)
+- [技术讨论](https://github.com/gentleman-org/antfe/discussions)
 
 ---
 
-## 📄 许可证
+## 📄 开源许可
 
-本项目基于 [ApacheV2 许可证](https://github.com/vadxq/nextjs-ai-starter/blob/main/LICENSE) 开源。
+本项目基于 [Apache License 2.0](https://github.com/gentleman-org/antfe/blob/main/LICENSE) 开源。
 
----
-
-## 💬 联系方式
-
-- **GitHub**: [@vadxq](https://github.com/vadxq)
+本项目基于原始模版项目 [Apache License 2.0](https://github.com/vadxq/nextjs-ai-starter/blob/main/LICENSE) 开源。
 
 ---
 
-**祝您开发愉快！🚀**
+## 💬 联系我们
+
+- **项目维护者**: [@vadxq](https://github.com/vadxq)
+- **Twitter**: [@vadxqDon](https://twitter.com/vadxqDon)
+
+---
+
+**感谢您对 AntFE 程序员社区的关注！一起构建更好的开发者生态！** 🚀

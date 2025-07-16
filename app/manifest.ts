@@ -3,13 +3,13 @@ import { MetadataRoute } from 'next';
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: 'Next.js AI Starter',
-    short_name: 'Next App',
-    description: 'A starter template for Next.js with AI features',
+    name: 'AntFE 程序员社区',
+    short_name: 'AntFE',
+    description: '连接全球优秀程序员的技术交流平台',
     start_url: '/',
     display: 'standalone',
     background_color: '#FFFFFF',
-    theme_color: '#000000',
+    theme_color: '#3B82F6',
     icons: [
       {
         src: '/icons/icon-192x192.png',
@@ -29,7 +29,7 @@ export default function manifest(): MetadataRoute.Manifest {
       },
     ],
     orientation: 'portrait',
-    categories: ['productivity', 'utilities'],
+    categories: ['social', 'education', 'developer'],
     screenshots: [
       {
         src: '/screenshots/mobile.png',
@@ -44,14 +44,19 @@ export default function manifest(): MetadataRoute.Manifest {
     ],
     shortcuts: [
       {
-        name: 'Dashboard',
-        url: '/dashboard',
-        icons: [{ src: '/icons/dashboard.png', sizes: '96x96' }],
+        name: '社区',
+        url: '/community',
+        icons: [{ src: '/icons/community.png', sizes: '96x96' }],
       },
       {
-        name: 'Profile',
-        url: '/profile',
-        icons: [{ src: '/icons/profile.png', sizes: '96x96' }],
+        name: '技术文章',
+        url: '/articles',
+        icons: [{ src: '/icons/articles.png', sizes: '96x96' }],
+      },
+      {
+        name: '开源项目',
+        url: '/projects',
+        icons: [{ src: '/icons/projects.png', sizes: '96x96' }],
       },
     ],
   };

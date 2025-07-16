@@ -29,47 +29,42 @@ export default function Footer() {
     {
       title: t('footer.project.title'),
       links: [
-        { name: t('footer.project.github'), href: 'https://github.com/vadxq/nextjs-ai-starter', external: true },
-        { name: t('footer.project.documentation'), href: 'https://github.com/vadxq/nextjs-ai-starter/blob/main/README.md', external: true },
-        { name: t('footer.project.examples'), href: 'https://github.com/vadxq/nextjs-ai-starter', external: true },
-        { name: t('footer.project.changelog'), href: 'https://github.com/vadxq/nextjs-ai-starter/releases', external: true },
+        { name: t('footer.project.github'), href: 'https://github.com/gentleman-org/antfe', external: true },
+        { name: t('footer.project.documentation'), href: 'https://github.com/gentleman-org/antfe/blob/main/README.md', external: true },
+        { name: t('footer.project.examples'), href: '/projects', external: false },
+        { name: t('footer.project.changelog'), href: 'https://github.com/gentleman-org/antfe/releases', external: true },
       ],
     },
     {
       title: t('footer.community.title'),
       links: [
-        { name: t('footer.community.discussions'), href: 'https://github.com/vadxq/nextjs-ai-starter/discussions', external: true },
-        { name: t('footer.community.issues'), href: 'https://github.com/vadxq/nextjs-ai-starter/issues', external: true },
-        { name: t('footer.community.contributing'), href: 'https://github.com/vadxq/nextjs-ai-starter/blob/main/CONTRIBUTING.md', external: true },
-        { name: t('footer.community.discord'), href: 'https://discord.gg/vadxq', external: true },
+        { name: t('footer.community.discussions'), href: 'https://github.com/gentleman-org/antfe/discussions', external: true },
+        { name: t('footer.community.issues'), href: 'https://github.com/gentleman-org/antfe/issues', external: true },
+        { name: t('footer.community.contributing'), href: 'https://github.com/gentleman-org/antfe/blob/main/CONTRIBUTING.md', external: true },
+        { name: t('footer.community.discord'), href: 'https://dc.antfe.com', external: true },
       ],
     },
     {
       title: t('footer.resources.title'),
       links: [
-        { name: t('footer.resources.nextjs'), href: 'https://nextjs.org', external: true },
-        { name: t('footer.resources.tailwind'), href: 'https://tailwindcss.com', external: true },
-        { name: t('footer.resources.typescript'), href: 'https://typescriptlang.org', external: true },
-        { name: t('footer.resources.vercel'), href: 'https://vercel.com', external: true },
+        { name: t('footer.resources.blog'), href: '/articles', external: false },
+        { name: t('footer.resources.tutorials'), href: '/tutorials', external: false },
+        { name: t('footer.resources.tools'), href: '/tools', external: false },
+        { name: t('footer.resources.courses'), href: '/courses', external: false },
       ],
     },
     {
       title: t('footer.legal.title'),
       links: [
-        { name: t('footer.legal.license'), href: 'https://github.com/vadxq/nextjs-ai-starter/blob/main/LICENSE', external: true },
-        { name: t('footer.legal.terms'), href: 'https://github.com/vadxq/nextjs-ai-starter/blob/main/TERMS.md', external: true },
-        { name: t('footer.legal.privacy'), href: 'https://github.com/vadxq/nextjs-ai-starter/blob/main/PRIVACY.md', external: true },
-        { name: t('footer.legal.security'), href: 'https://github.com/vadxq/nextjs-ai-starter/blob/main/SECURITY.md', external: true },
+        { name: t('footer.legal.license'), href: 'https://github.com/gentleman-org/antfe/blob/main/LICENSE', external: true },
+        { name: t('footer.legal.terms'), href: '/terms', external: false },
+        { name: t('footer.legal.privacy'), href: '/privacy', external: false },
+        { name: t('footer.legal.security'), href: '/security', external: false },
       ],
     },
   ];
 
-  const socialLinks = [
-    { name: 'GitHub', icon: Github, href: 'https://github.com/vadxq', color: 'hover:text-gray-900 dark:hover:text-white' },
-    { name: 'Twitter', icon: Twitter, href: 'https://twitter.com/vadxqDon', color: 'hover:text-blue-500' },
-    { name: 'LinkedIn', icon: Linkedin, href: 'https://linkedin.com', color: 'hover:text-blue-600' },
-    { name: 'Email', icon: Mail, href: 'mailto:dxl@vadxq.com', color: 'hover:text-green-500' },
-  ];
+  const socialLinks = [{ name: 'GitHub', icon: Github, href: 'https://github.com/gentleman-org', color: 'hover:text-gray-900 dark:hover:text-white' }];
 
   return (
     <footer className="relative mt-20 border-t border-white/10 dark:border-white/5">
@@ -98,7 +93,7 @@ export default function Footer() {
                     </span>
                   </div>
                   <p className="max-w-md leading-relaxed text-gray-600 dark:text-gray-400">
-                    现代化的Next.js开发模板，集成AI功能、国际化支持、暗黑模式和最新UI组件。助力开发者快速构建生产级应用。
+                    AntFE 程序员社区致力于连接全球优秀开发者，分享前沿技术、讨论编程实践、构建开源项目。在这里，每个程序员都能找到成长的方向。
                   </p>
                 </div>
 

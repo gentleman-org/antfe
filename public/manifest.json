@@ -1,6 +1,7 @@
 {
-  "name": "antfe",
-  "short_name": "antfe",
+  "name": "AntFE 程序员社区",
+  "short_name": "AntFE",
+  "description": "连接全球优秀程序员的技术交流平台",
   "icons": [
     {
       "src": "/icons/icon-192x192.png",
@@ -14,9 +15,10 @@
       "type": "image/png"
     }
   ],
-  "theme_color": "#FFFFFF",
+  "theme_color": "#3B82F6",
   "background_color": "#FFFFFF",
   "start_url": "/",
   "display": "standalone",
-  "orientation": "portrait"
+  "orientation": "portrait",
+  "categories": ["social", "education", "developer"]
 }

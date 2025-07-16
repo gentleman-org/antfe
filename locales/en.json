@@ -1,109 +1,111 @@
 {
   "homePage": {
-    "title": "Next.js AI Starter",
-    "subtitle": "The Ultimate Modern Web Development Kit",
-    "description": "A production-ready Next.js template with AI integration, internationalization, dark mode, and cutting-edge UI components. Built for developers who want to ship fast.",
-    "getStarted": "Get Started",
-    "learnMore": "View on GitHub",
-    "openSource": "🎉 Open Source & Free",
+    "title": "AntFE Developer Community",
+    "subtitle": "Connecting Excellent Developers Worldwide",
+    "description": "A technical community platform built for programmers to share cutting-edge technologies, discuss programming practices, and build open source projects. Here, every developer can find like-minded partners.",
+    "getStarted": "Join Community",
+    "learnMore": "Learn More",
+    "openSource": "🚀 Open Community",
     "features": {
       "ai": {
-        "title": "AI-Powered",
-        "description": "Built-in AI integration with modern APIs, ready for your next intelligent application"
+        "title": "Tech Exchange",
+        "description": "Share experiences with excellent programmers worldwide, discuss latest tech trends and programming best practices"
       },
       "modern": {
-        "title": "Modern Stack",
-        "description": "Next.js 15, TypeScript, Tailwind CSS, and the latest web technologies"
+        "title": "Open Source",
+        "description": "Discover and participate in quality open source projects, collaborate with community members to improve coding skills"
       },
       "i18n": {
-        "title": "Internationalization",
-        "description": "Full i18n support with next-intl, ready for global deployment"
+        "title": "Multicultural",
+        "description": "Support multilingual communication, connect developers from different countries and regions, promote tech culture exchange"
       },
       "performance": {
-        "title": "Performance First",
-        "description": "Optimized for speed with server components, edge runtime, and smart caching"
+        "title": "Career Growth",
+        "description": "Get career development advice, technical interview guidance, and connect with industry experts and senior developers"
       }
     }
   },
   "layout": {
-    "title": "Next.js AI Starter",
+    "title": "AntFE Developer Community",
     "menu": "Menu",
     "search": "Search",
     "home": "Home",
-    "features": "Features",
+    "features": "Community Features",
     "docs": "Documentation",
-    "examples": "Examples",
-    "about": "About",
+    "examples": "Project Cases",
+    "about": "About Us",
     "github": "GitHub"
   },
   "header": {
     "navigation": {
       "home": "Home",
-      "features": "Features",
-      "docs": "Documentation",
-      "examples": "Examples",
-      "about": "About",
-      "github": "GitHub"
+      "community": "Community",
+      "articles": "Tech Articles",
+      "projects": "Open Source",
+      "developers": "Developers",
+      "events": "Events",
+      "jobs": "Job Board"
     },
     "actions": {
       "search": "Search",
       "notifications": "Notifications",
       "profile": "Profile",
-      "settings": "Settings"
+      "settings": "Settings",
+      "discord": "Discord Community"
     }
   },
   "footer": {
     "project": {
-      "title": "Project",
+      "title": "Community",
       "github": "GitHub Repository",
       "documentation": "Documentation",
-      "examples": "Examples",
+      "examples": "Project Cases",
       "changelog": "Changelog"
     },
     "community": {
-      "title": "Community",
-      "discussions": "Discussions",
+      "title": "Communication",
+      "discussions": "Tech Discussions",
       "issues": "Issues",
       "contributing": "Contributing",
-      "discord": "Discord"
+      "discord": "Discord Group"
     },
     "resources": {
       "title": "Resources",
-      "nextjs": "Next.js",
-      "tailwind": "Tailwind CSS",
-      "typescript": "TypeScript",
-      "vercel": "Deploy on Vercel"
+      "blog": "Tech Blog",
+      "tutorials": "Tutorials",
+      "tools": "Dev Tools",
+      "courses": "Online Courses"
     },
     "legal": {
       "title": "Legal",
-      "license": "MIT License",
+      "license": "Open Source License",
       "terms": "Terms of Use",
       "privacy": "Privacy Policy",
       "security": "Security"
     },
     "social": {
-      "title": "Follow Updates",
+      "title": "Follow Us",
       "twitter": "Twitter",
       "github": "GitHub",
       "linkedin": "LinkedIn",
       "discord": "Discord"
     },
     "newsletter": {
-      "title": "Stay Updated",
-      "description": "Get notified about new features and updates",
+      "title": "Newsletter",
+      "description": "Get latest tech updates and community highlights",
       "placeholder": "Enter your email",
       "subscribe": "Subscribe"
     },
-    "copyright": "© 2024 Next.js AI Starter. Open source under MIT License.",
-    "poweredBy": "Built with Next.js & AI"
+    "copyright": "© 2024 AntFE Developer Community. Open source community project.",
+    "poweredBy": "Built by developers for developers"
   },
   "localeSwitcher": {
     "label": "English",
     "locale": "{locale, select, en {English} zhCN {Chinese} other {Unknown}}"
   },
   "offline": {
-    "title": "Next.js AI Starter",
-    "description": "Modern web development starter kit",
+    "title": "AntFE Developer Community",
+    "description": "Global developer tech exchange platform",
     "tips": "Check your internet connection"
   }
 }

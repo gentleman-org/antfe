@@ -6,13 +6,11 @@ export default function LocaleSwitcher() {
   const t = useTranslations('localeSwitcher');
   const locale = useLocale();
 
-  return (
-    <LocaleSwitcherSelect defaultValue={locale} label={t('label')}>
-      {routing.locales.map((cur) => (
-        <option key={cur} value={cur}>
-          {t('locale', { locale: cur.replace('-', '') })}
-        </option>
-      ))}
-    </LocaleSwitcherSelect>
-  );
+  // 创建语言选项数组
+  const options = routing.locales.map((cur) => ({
+    value: cur,
+    label: t('locale', { locale: cur.replace('-', '') }),
+  }));
+
+  return <LocaleSwitcherSelect defaultValue={locale} label={t('label')} options={options} />;
 }
