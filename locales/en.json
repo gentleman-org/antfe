@@ -27,6 +27,7 @@
   },
   "layout": {
     "title": "AntFE Developer Community",
+    "shortTitle": "AntFE",
     "menu": "Menu",
     "search": "Search",
     "home": "Home",
