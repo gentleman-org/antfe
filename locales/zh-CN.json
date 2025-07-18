@@ -27,6 +27,7 @@
   },
   "layout": {
     "title": "AntFE 程序员社区",
+    "shortTitle": "AntFE",
     "menu": "菜单",
     "search": "搜索",
     "home": "首页",
