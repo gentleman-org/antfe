@@ -84,7 +84,7 @@ antfe/
 ### 如何添加你的主页
 
 1. **添加你的信息**:
-   - 打开根目录中的 `personal.json` 文件。
+   - 打开根目录中的 `me.json` 文件。
    - 添加一个包含你信息的新 JSON 对象。请参考现有格式。
 
    ```json
@@ -104,7 +104,7 @@ antfe/
    ```
 
 2. **创建你的目录**:
-   - 在 `app/(personal)/` 目录中，创建一个以你的 GitHub 用户名命名的新文件夹（例如 `app/(personal)/your_username/`）。
+   - 在 `app/(me)/` 目录中，创建一个以你的 GitHub 用户名命名的新文件夹（例如 `app/(me)/your_username/`）。
    - 这个目录完全由你管理。
 
 3. **构建你的页面**:

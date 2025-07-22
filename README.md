@@ -84,7 +84,7 @@ Every community member can build their own personal homepage, which will be disp
 ### How to Add Your Homepage
 
 1. **Add Your Info**:
-   - Open the `personal.json` file in the root directory.
+   - Open the `me.json` file in the root directory.
    - Add a new JSON object with your information. Please refer to the existing format.
 
    ```json
@@ -104,7 +104,7 @@ Every community member can build their own personal homepage, which will be disp
    ```
 
 2. **Create Your Directory**:
-   - In the `app/(personal)/` directory, create a new folder with your GitHub username (e.g., `app/(personal)/your_username/`).
+   - In the `app/(me)/` directory, create a new folder with your GitHub username (e.g., `app/(me)/your_username/`).
    - This directory is entirely yours to manage.
 
 3. **Build Your Page**:
