@@ -2,8 +2,9 @@
 
 import { useTranslations } from 'next-intl';
 import Link from 'next/link';
+import Image from 'next/image';
 import { useState } from 'react';
-import { Github, Twitter, Linkedin, Mail, Send, Zap, ArrowUp, Heart } from 'lucide-react';
+import { Github, Send, ArrowUp, Heart } from 'lucide-react';
 import { Button } from '~/components/ui/button';
 import { Input } from '~/components/ui/input';
 
@@ -83,8 +84,8 @@ export default function Footer() {
                 <div className="space-y-4">
                   <div className="flex items-center space-x-3">
                     <div className="relative">
-                      <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-blue-500 to-purple-600 shadow-lg">
-                        <Zap className="h-5 w-5 text-white" />
+                      <div className="flex h-10 w-10 items-center justify-center overflow-hidden rounded-xl bg-gradient-to-br from-blue-500 to-purple-600 shadow-lg">
+                        <Image src="/logo.png" alt="AntFE Logo" width={24} height={24} className="drop-shadow-sm" />
                       </div>
                       <div className="absolute inset-0 rounded-xl bg-gradient-to-br from-blue-500 to-purple-600 opacity-30 blur-lg" />
                     </div>
