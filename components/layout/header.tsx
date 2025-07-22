@@ -54,7 +54,7 @@ export default function Header() {
                   </div>
                   <span className="bg-gradient-to-r from-gray-900 via-blue-800 to-purple-800 bg-clip-text text-xl font-bold text-transparent dark:from-white dark:via-blue-200 dark:to-purple-200">
                     <span className="md:hidden">{t('layout.shortTitle')}</span>
-                    <span className="hidden md:inline">{t('layout.title')}</span>
+                    {/* <span className="hidden md:inline">{t('layout.title')}</span> */}
                   </span>
                 </Link>
               </div>
