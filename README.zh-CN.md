@@ -86,13 +86,22 @@ antfe/
 1. **添加你的信息**:
    - 打开根目录中的 `me.json` 文件。
    - 添加一个包含你信息的新 JSON 对象。请参考现有格式。
+   - name：昵称
+   - path：你的路径
+   - type是可选项：`nextjs`/`markdowm`/`iframe` (markdwon还在支持中)
+   - description: 描述
+   - avatar: 头像
+   - tags: 你给自己的标签
+   - links: 你的超链.icon可以是在线图片
 
    ```json
    {
      "name": "vadxq",
      "path": "vadxq",
-     "description": "一个热爱编程和构建事物的开发者。",
+     "type": "nextjs",
+     "description": "A developer who loves to code and build things.",
      "avatar": "https://avatars.githubusercontent.com/u/123456789?v=4",
+     "tags": ["developer", "frontend", "backend", "fullstack"],
      "links": [
        {
          "name": "GitHub",

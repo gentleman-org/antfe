@@ -86,13 +86,22 @@ Every community member can build their own personal homepage, which will be disp
 1. **Add Your Info**:
    - Open the `me.json` file in the root directory.
    - Add a new JSON object with your information. Please refer to the existing format.
+   - name: Your nickname
+   - path: Your route path
+   - type: Optional: `nextjs`/`markdown`/`iframe` (markdown support coming soon)
+   - description: Description
+   - avatar: Avatar
+   - tags: Your personal tags
+   - links: Your links. Icon can be an online image
 
    ```json
    {
      "name": "vadxq",
      "path": "vadxq",
+     "type": "nextjs",
      "description": "A developer who loves to code and build things.",
      "avatar": "https://avatars.githubusercontent.com/u/123456789?v=4",
+     "tags": ["developer", "frontend", "backend", "fullstack"],
      "links": [
        {
          "name": "GitHub",
