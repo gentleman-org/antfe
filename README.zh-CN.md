@@ -1,17 +1,8 @@
-# AntFE 程序员社区
+# AntFE 开发者社区
 
 ## 🌟 项目概览
 
-**AntFE 程序员社区** 是一个专为程序员打造的现代化技术交流平台，致力于连接全球优秀开发者，分享前沿技术、讨论编程实践、构建开源项目。在这里，每个程序员都能找到志同道合的伙伴。
-
-### 🎯 社区特色
-
-- 🚀 **技术交流**: 与全球优秀程序员分享经验，讨论最新技术趋势
-- 🎨 **现代设计**: 基于液态玻璃设计，提供优雅的用户体验
-- 🌍 **多元文化**: 支持多语言交流，连接不同国家和地区的开发者
-- 🔧 **开源精神**: 拥抱开源文化，共同构建更好的开发者生态
-- ⚡ **高性能**: 基于 Next.js 15 构建，享受极致的浏览体验
-- 📱 **PWA 支持**: 移动端原生应用体验
+**AntFE 开发者社区** 是一个专为程序员打造的现代化技术交流平台，致力于连接全球优秀开发者，分享前沿技术、讨论编程实践、构建开源项目。在这里，每个程序员都能找到志同道合的伙伴。
 
 ---
 
@@ -21,23 +12,7 @@
 
 ### 前端框架
 
-- **Next.js 15** - 最新的 React 全栈框架，使用 App Router
-- **React 19** - 最新的 React 版本，支持新特性
-- **TypeScript 5.8** - 静态类型检查和代码提示
-
-### 样式和 UI
-
-- **Tailwind CSS 4.1** - 原子化 CSS 框架
-- **Shadcn UI** - 基于 Radix UI 的组件库
-- **液态玻璃设计** - iOS26 风格的现代化 UI 效果
-- **Lucide React** - 现代化图标库
-
-### 功能特性
-
-- **SWR 2.3** - 数据获取和缓存
-- **Next-intl 4.3** - 国际化解决方案
-- **Next-themes 0.4** - 主题切换支持
-- **Serwist 9.0** - PWA 和 Service Worker
+![Next.js](https://img.shields.io/badge/Next.js-15-black?style=flat&logo=next.js) ![React](https://img.shields.io/badge/React-19-61DAFB?style=flat&logo=react) ![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?style=flat&logo=typescript) ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4-06B6D4?style=flat&logo=tailwind-css) ![Shadcn UI](https://img.shields.io/badge/Shadcn_UI-000000?style=flat) ![SWR](https://img.shields.io/badge/SWR-000000?style=flat&logo=vercel) ![Next-intl](https://img.shields.io/badge/Next--intl-000000?style=flat) ![Serwist](https://img.shields.io/badge/Serwist-000000?style=flat)
 
 ---
 
@@ -102,6 +77,46 @@ antfe/
 
 ---
 
+## 🏠 个人主页
+
+每个社区成员都可以构建自己的个人主页，这将在社区中展示。这是展示你自己的空间！
+
+### 如何添加你的主页
+
+1. **添加你的信息**:
+   - 打开根目录中的 `personal.json` 文件。
+   - 添加一个包含你信息的新 JSON 对象。请参考现有格式。
+
+   ```json
+   {
+     "name": "vadxq",
+     "path": "vadxq",
+     "description": "一个热爱编程和构建事物的开发者。",
+     "avatar": "https://avatars.githubusercontent.com/u/123456789?v=4",
+     "links": [
+       {
+         "name": "GitHub",
+         "icon": "Github",
+         "url": "https://github.com/vadxq"
+       }
+     ]
+   }
+   ```
+
+2. **创建你的目录**:
+   - 在 `app/(personal)/` 目录中，创建一个以你的 GitHub 用户名命名的新文件夹（例如 `app/(personal)/your_username/`）。
+   - 这个目录完全由你管理。
+
+3. **构建你的页面**:
+   你可以完全自由地构建你的页面。这里有几个选项：
+   - **Next.js 页面**: 创建一个 `page.tsx` 文件，使用 React 组件构建你的页面。
+   - **iframe**: 使用 `iframe` 嵌入你现有的个人网站。
+   - **MDX**: 使用 Markdown 编写你的页面内容。
+
+我们鼓励你发挥创意，让你的个人页面独一无二！
+
+---
+
 ## 🚀 快速开始
 
 ### 1. 环境要求
@@ -157,44 +172,6 @@ npm run log               # 基于 Git 提交生成 CHANGELOG
 
 - [ ] **用户系统**
   - [ ] 用户注册和登录
-  - [ ] 个人资料管理
-  - [ ] 用户权限系统
-
-- [ ] **社区功能**
-  - [ ] 技术讨论区
-  - [ ] 文章发布系统
-  - [ ] 项目展示平台
-  - [ ] 评论和点赞功能
-
-- [ ] **内容管理**
-  - [ ] 文章编辑器
-  - [ ] 代码高亮
-  - [ ] 图片上传
-  - [ ] 标签系统
-
-### 🛠 中期计划
-
-- [ ] **高级功能**
-  - [ ] 实时聊天系统
-  - [ ] 视频会议集成
-  - [ ] 在线代码编辑器
-  - [ ] AI 助手集成
-
-- [ ] **移动应用**
-  - [ ] 离线阅读功能
-  - [ ] 推送通知
-
-### 🔍 长期愿景
-
-- [ ] **全球化**
-  - [ ] 多语言支持扩展
-  - [ ] 国际社区运营
-  - [ ] 本地化活动
-
-- [ ] **商业化**
-  - [ ] 企业版功能
-  - [ ] 付费课程平台
-  - [ ] 人才招聘服务
 
 ---
 
@@ -251,4 +228,4 @@ npm run log               # 基于 Git 提交生成 CHANGELOG
 
 ---
 
-**感谢您对 AntFE 程序员社区的关注！一起构建更好的开发者生态！** 🚀
+**感谢您对 AntFE 开发者社区的关注！一起构建更好的开发者生态！** 🚀

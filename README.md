@@ -4,15 +4,6 @@
 
 **AntFE Developer Community** is a modern technology exchange platform designed for programmers, dedicated to connecting outstanding developers worldwide, sharing cutting-edge technologies, discussing programming practices, and building open-source projects. Here, every programmer can find like-minded partners.
 
-### 🎯 Community Features
-
-- 🚀 **Technical Exchange**: Share experiences with outstanding programmers worldwide and discuss the latest technology trends
-- 🎨 **Modern Design**: Based on liquid glass design, providing an elegant user experience
-- 🌍 **Multicultural**: Support multi-language communication, connecting developers from different countries and regions
-- 🔧 **Open Source Spirit**: Embrace open source culture and build a better developer ecosystem together
-- ⚡ **High Performance**: Built on Next.js 15, enjoy an ultimate browsing experience
-- 📱 **PWA Support**: Native mobile app experience
-
 ---
 
 ## 🛠 Technical Architecture
@@ -21,23 +12,7 @@
 
 ### Frontend Framework
 
-- **Next.js 15** - Latest React full-stack framework using App Router
-- **React 19** - Latest React version with new features support
-- **TypeScript 5.8** - Static type checking and code hints
-
-### Styling and UI
-
-- **Tailwind CSS 4.1** - Atomic CSS framework
-- **Shadcn UI** - Component library based on Radix UI
-- **Liquid Glass Design** - iOS26-style modern UI effects
-- **Lucide React** - Modern icon library
-
-### Features
-
-- **SWR 2.3** - Data fetching and caching
-- **Next-intl 4.3** - Internationalization solution
-- **Next-themes 0.4** - Theme switching support
-- **Serwist 9.0** - PWA and Service Worker
+![Next.js](https://img.shields.io/badge/Next.js-15-black?style=flat&logo=next.js) ![React](https://img.shields.io/badge/React-19-61DAFB?style=flat&logo=react) ![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?style=flat&logo=typescript) ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4-06B6D4?style=flat&logo=tailwind-css) ![Shadcn UI](https://img.shields.io/badge/Shadcn_UI-000000?style=flat) ![SWR](https://img.shields.io/badge/SWR-000000?style=flat&logo=vercel) ![Next-intl](https://img.shields.io/badge/Next--intl-000000?style=flat) ![Serwist](https://img.shields.io/badge/Serwist-000000?style=flat)
 
 ---
 
@@ -102,6 +77,46 @@ antfe/
 
 ---
 
+## 🏠 Personal Homepage
+
+Every community member can build their own personal homepage, which will be displayed in the community. This is a space to showcase yourself!
+
+### How to Add Your Homepage
+
+1. **Add Your Info**:
+   - Open the `personal.json` file in the root directory.
+   - Add a new JSON object with your information. Please refer to the existing format.
+
+   ```json
+   {
+     "name": "vadxq",
+     "path": "vadxq",
+     "description": "A developer who loves to code and build things.",
+     "avatar": "https://avatars.githubusercontent.com/u/123456789?v=4",
+     "links": [
+       {
+         "name": "GitHub",
+         "icon": "Github",
+         "url": "https://github.com/vadxq"
+       }
+     ]
+   }
+   ```
+
+2. **Create Your Directory**:
+   - In the `app/(personal)/` directory, create a new folder with your GitHub username (e.g., `app/(personal)/your_username/`).
+   - This directory is entirely yours to manage.
+
+3. **Build Your Page**:
+   You have complete freedom in how you build your page. Here are a few options:
+   - **Next.js Page**: Create a `page.tsx` file and build your page with React components.
+   - **iframe**: Embed your existing personal website using an `iframe`.
+   - **MDX**: Write your page content using Markdown.
+
+We encourage you to be creative and make your personal page unique!
+
+---
+
 ## 🚀 Quick Start
 
 ### 1. Requirements
@@ -157,44 +172,6 @@ npm run log               # Generate CHANGELOG based on Git commits
 
 - [ ] **User System**
   - [ ] User registration and login
-  - [ ] Profile management
-  - [ ] User permission system
-
-- [ ] **Community Features**
-  - [ ] Technical discussion areas
-  - [ ] Article publishing system
-  - [ ] Project showcase platform
-  - [ ] Comments and likes functionality
-
-- [ ] **Content Management**
-  - [ ] Article editor
-  - [ ] Code highlighting
-  - [ ] Image upload
-  - [ ] Tag system
-
-### 🛠 Medium-term Plans
-
-- [ ] **Advanced Features**
-  - [ ] Real-time chat system
-  - [ ] Video conference integration
-  - [ ] Online code editor
-  - [ ] AI assistant integration
-
-- [ ] **Mobile Application**
-  - [ ] Offline reading functionality
-  - [ ] Push notifications
-
-### 🔍 Long-term Vision
-
-- [ ] **Globalization**
-  - [ ] Multi-language support expansion
-  - [ ] International community operations
-  - [ ] Localized activities
-
-- [ ] **Commercialization**
-  - [ ] Enterprise version features
-  - [ ] Paid course platform
-  - [ ] Talent recruitment services
 
 ---
 
