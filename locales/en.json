@@ -22,7 +22,21 @@
       "performance": {
         "title": "Career Growth",
         "description": "Get career development advice, technical interview guidance, and connect with industry experts and senior developers"
-      }
+      },
+      "whyChoose": "Why Choose AntFE Community",
+      "whyChooseDescription": "Connect with outstanding developers worldwide, share latest tech trends, and build a better developer ecosystem together"
+    },
+    "statistics": {
+      "activeDevelopers": "Active Developers",
+      "techArticles": "Tech Articles",
+      "openSourceProjects": "Open Source Projects",
+      "communityActivities": "Community Activities"
+    },
+    "cta": {
+      "readyToJoin": "Ready to Join Us?",
+      "joinDescription": "Join AntFE Developer Community now and grow together with developers worldwide",
+      "joinCommunity": "Join Community",
+      "openSourceProject": "Open Source Project"
     }
   },
   "layout": {
@@ -98,7 +112,10 @@
       "subscribe": "Subscribe"
     },
     "copyright": "© 2024 AntFE Developer Community. Open source community project.",
-    "poweredBy": "Built by developers for developers"
+    "poweredBy": "Built by developers for developers",
+    "communityDescription": "AntFE Developer Community is dedicated to connecting outstanding developers worldwide, sharing cutting-edge technologies, discussing programming practices, and building open source projects. Here, every developer can find their path to growth.",
+    "subscribeSuccess": "✨ Subscription successful! Thank you for your attention",
+    "backToTop": "Back to top"
   },
   "localeSwitcher": {
     "label": "English",
@@ -141,5 +158,11 @@
       "useUserDescription": "Access user data on the client side",
       "authHelperDescription": "Check authentication status on the server side"
     }
+  },
+  "theme": {
+    "toggleTheme": "Toggle theme",
+    "light": "Light",
+    "dark": "Dark",
+    "system": "System"
   }
 }

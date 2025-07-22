@@ -103,10 +103,10 @@ export default function Home() {
               {/* Statistics */}
               <div className="grid grid-cols-2 gap-8 pt-16 md:grid-cols-4">
                 {[
-                  { number: '1000+', label: '活跃开发者' },
-                  { number: '500+', label: '技术文章' },
-                  { number: '100+', label: '开源项目' },
-                  { number: '24/7', label: '社区活动' },
+                  { number: '100+', label: t('homePage.statistics.activeDevelopers') },
+                  { number: '50+', label: t('homePage.statistics.techArticles') },
+                  { number: '30+', label: t('homePage.statistics.openSourceProjects') },
+                  { number: '24/7', label: t('homePage.statistics.communityActivities') },
                 ].map((stat, index) => (
                   <div key={index} className="space-y-2">
                     <div className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-3xl font-bold text-transparent md:text-4xl">{stat.number}</div>
@@ -123,9 +123,9 @@ export default function Home() {
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="mb-16 space-y-6 text-center">
               <h2 className="bg-gradient-to-r from-gray-900 to-gray-600 bg-clip-text text-4xl font-bold text-transparent md:text-5xl dark:from-white dark:to-gray-300">
-                为什么选择 AntFE 社区
+                {t('homePage.features.whyChoose')}
               </h2>
-              <p className="mx-auto max-w-3xl text-xl text-gray-600 dark:text-gray-400">连接全球优秀程序员，分享最新技术趋势，共同构建更好的开发者生态</p>
+              <p className="mx-auto max-w-3xl text-xl text-gray-600 dark:text-gray-400">{t('homePage.features.whyChooseDescription')}</p>
             </div>
 
             <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
@@ -159,9 +159,9 @@ export default function Home() {
             <div className="liquid-glass-card space-y-8 rounded-3xl p-12">
               <div className="space-y-4">
                 <h2 className="bg-gradient-to-r from-gray-900 to-gray-600 bg-clip-text text-4xl font-bold text-transparent md:text-5xl dark:from-white dark:to-gray-300">
-                  准备好加入我们了吗？
+                  {t('homePage.cta.readyToJoin')}
                 </h2>
-                <p className="text-xl text-gray-600 dark:text-gray-400">立即加入 AntFE 程序员社区，与全球开发者一起成长</p>
+                <p className="text-xl text-gray-600 dark:text-gray-400">{t('homePage.cta.joinDescription')}</p>
               </div>
 
               <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
@@ -169,7 +169,7 @@ export default function Home() {
                   <Link href="/community">
                     <span className="flex items-center space-x-2">
                       <Rocket className="h-4 w-4 transition-transform duration-300 group-hover:rotate-12" />
-                      <span>加入社区</span>
+                      <span>{t('homePage.cta.joinCommunity')}</span>
                     </span>
                   </Link>
                 </Button>
@@ -178,7 +178,7 @@ export default function Home() {
                   <Link href="https://github.com/vadxq/antfe" target="_blank" rel="noopener noreferrer">
                     <span className="flex items-center space-x-2">
                       <Github className="h-4 w-4 transition-transform duration-300 group-hover:rotate-12" />
-                      <span>开源项目</span>
+                      <span>{t('homePage.cta.openSourceProject')}</span>
                     </span>
                   </Link>
                 </Button>

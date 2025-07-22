@@ -30,7 +30,7 @@ export default function Header() {
     { name: t('header.navigation.projects'), href: '/projects' },
     { name: t('header.navigation.developers'), href: '/developers' },
     // { name: t('header.navigation.events'), href: '/events' },
-    { name: 'GitHub', href: 'https://github.com/gentleman-org/antfe' },
+    { name: t('layout.github'), href: 'https://github.com/gentleman-org/antfe' },
   ];
 
   return (

@@ -64,7 +64,7 @@ export default function Footer() {
     },
   ];
 
-  const socialLinks = [{ name: 'GitHub', icon: Github, href: 'https://github.com/gentleman-org', color: 'hover:text-gray-900 dark:hover:text-white' }];
+  const socialLinks = [{ name: t('layout.github'), icon: Github, href: 'https://github.com/gentleman-org', color: 'hover:text-gray-900 dark:hover:text-white' }];
 
   return (
     <footer className="relative mt-20 border-t border-white/10 dark:border-white/5">
@@ -92,9 +92,7 @@ export default function Footer() {
                       {t('layout.title')}
                     </span>
                   </div>
-                  <p className="max-w-md leading-relaxed text-gray-600 dark:text-gray-400">
-                    AntFE 程序员社区致力于连接全球优秀开发者，分享前沿技术、讨论编程实践、构建开源项目。在这里，每个程序员都能找到成长的方向。
-                  </p>
+                  <p className="max-w-md leading-relaxed text-gray-600 dark:text-gray-400">{t('footer.communityDescription')}</p>
                 </div>
 
                 {/* Subscription area */}
@@ -123,7 +121,7 @@ export default function Footer() {
                     </Button>
                   </form>
 
-                  {isSubscribed && <p className="animate-pulse text-sm text-green-600 dark:text-green-400">✨ 订阅成功！感谢您的关注</p>}
+                  {isSubscribed && <p className="animate-pulse text-sm text-green-600 dark:text-green-400">{t('footer.subscribeSuccess')}</p>}
                 </div>
               </div>
 
@@ -192,7 +190,7 @@ export default function Footer() {
                   size="icon"
                   className="h-10 w-10 rounded-xl border border-white/20 bg-white/50 backdrop-blur-sm transition-all duration-300 hover:scale-110 hover:bg-white/80 dark:border-white/10 dark:bg-white/5 dark:hover:bg-white/10">
                   <ArrowUp className="h-4 w-4" />
-                  <span className="sr-only">回到顶部</span>
+                  <span className="sr-only">{t('footer.backToTop')}</span>
                 </Button>
               </div>
             </div>

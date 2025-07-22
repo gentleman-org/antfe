@@ -22,7 +22,21 @@
       "performance": {
         "title": "职业发展",
         "description": "获取职业发展建议、技术面试指导，与行业专家和资深开发者建立联系"
-      }
+      },
+      "whyChoose": "为什么选择 AntFE 社区",
+      "whyChooseDescription": "连接全球优秀程序员，分享最新技术趋势，共同构建更好的开发者生态"
+    },
+    "statistics": {
+      "activeDevelopers": "活跃开发者",
+      "techArticles": "技术文章",
+      "openSourceProjects": "开源项目",
+      "communityActivities": "社区活动"
+    },
+    "cta": {
+      "readyToJoin": "准备好加入我们了吗？",
+      "joinDescription": "立即加入 AntFE 开发者社区，与全球开发者一起成长",
+      "joinCommunity": "加入社区",
+      "openSourceProject": "开源项目"
     }
   },
   "layout": {
@@ -98,7 +112,10 @@
       "subscribe": "订阅"
     },
     "copyright": "© 2024 AntFE 程序员社区. 开源社区项目。",
-    "poweredBy": "由程序员为程序员构建"
+    "poweredBy": "由程序员为程序员构建",
+    "communityDescription": "AntFE 开发者社区致力于连接全球优秀开发者，分享前沿技术、讨论编程实践、构建开源项目。在这里，每个开发者都能找到成长的方向。",
+    "subscribeSuccess": "✨ 订阅成功！感谢您的关注",
+    "backToTop": "回到顶部"
   },
   "localeSwitcher": {
     "label": "中文",
@@ -141,5 +158,11 @@
       "useUserDescription": "在客户端访问用户数据",
       "authHelperDescription": "在服务端检查认证状态"
     }
+  },
+  "theme": {
+    "toggleTheme": "切换主题",
+    "light": "浅色",
+    "dark": "深色",
+    "system": "系统"
   }
 }
