@@ -81,7 +81,7 @@ export default function Home() {
               {/* CTA buttons */}
               <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
                 <Button size="lg" className="group liquid-glass-button-primary" asChild>
-                  <Link href="/community">
+                  <Link href="https://dc.antfe.com">
                     <span className="flex items-center space-x-2">
                       <span>{t('getStarted')}</span>
                       <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
@@ -103,10 +103,10 @@ export default function Home() {
               {/* Statistics */}
               <div className="grid grid-cols-2 gap-8 pt-16 md:grid-cols-4">
                 {[
-                  { number: '100+', label: t('homePage.statistics.activeDevelopers') },
-                  { number: '50+', label: t('homePage.statistics.techArticles') },
-                  { number: '30+', label: t('homePage.statistics.openSourceProjects') },
-                  { number: '24/7', label: t('homePage.statistics.communityActivities') },
+                  { number: '100+', label: t('statistics.activeDevelopers') },
+                  { number: '50+', label: t('statistics.techArticles') },
+                  { number: '30+', label: t('statistics.openSourceProjects') },
+                  { number: '24/7', label: t('statistics.communityActivities') },
                 ].map((stat, index) => (
                   <div key={index} className="space-y-2">
                     <div className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-3xl font-bold text-transparent md:text-4xl">{stat.number}</div>
@@ -123,9 +123,9 @@ export default function Home() {
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="mb-16 space-y-6 text-center">
               <h2 className="bg-gradient-to-r from-gray-900 to-gray-600 bg-clip-text text-4xl font-bold text-transparent md:text-5xl dark:from-white dark:to-gray-300">
-                {t('homePage.features.whyChoose')}
+                {t('features.whyChoose')}
               </h2>
-              <p className="mx-auto max-w-3xl text-xl text-gray-600 dark:text-gray-400">{t('homePage.features.whyChooseDescription')}</p>
+              <p className="mx-auto max-w-3xl text-xl text-gray-600 dark:text-gray-400">{t('features.whyChooseDescription')}</p>
             </div>
 
             <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
@@ -159,26 +159,26 @@ export default function Home() {
             <div className="liquid-glass-card space-y-8 rounded-3xl p-12">
               <div className="space-y-4">
                 <h2 className="bg-gradient-to-r from-gray-900 to-gray-600 bg-clip-text text-4xl font-bold text-transparent md:text-5xl dark:from-white dark:to-gray-300">
-                  {t('homePage.cta.readyToJoin')}
+                  {t('cta.readyToJoin')}
                 </h2>
-                <p className="text-xl text-gray-600 dark:text-gray-400">{t('homePage.cta.joinDescription')}</p>
+                <p className="text-xl text-gray-600 dark:text-gray-400">{t('cta.joinDescription')}</p>
               </div>
 
               <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
                 <Button size="lg" className="group liquid-glass-button-primary" asChild>
-                  <Link href="/community">
+                  <Link href="https://dc.antfe.com">
                     <span className="flex items-center space-x-2">
                       <Rocket className="h-4 w-4 transition-transform duration-300 group-hover:rotate-12" />
-                      <span>{t('homePage.cta.joinCommunity')}</span>
+                      <span>{t('cta.joinCommunity')}</span>
                     </span>
                   </Link>
                 </Button>
 
                 <Button variant="outline" size="lg" className="group liquid-glass-button-secondary" asChild>
-                  <Link href="https://github.com/vadxq/antfe" target="_blank" rel="noopener noreferrer">
+                  <Link href="https://github.com/gentleman-org/antfe" target="_blank" rel="noopener noreferrer">
                     <span className="flex items-center space-x-2">
                       <Github className="h-4 w-4 transition-transform duration-300 group-hover:rotate-12" />
-                      <span>{t('homePage.cta.openSourceProject')}</span>
+                      <span>{t('cta.openSourceProject')}</span>
                     </span>
                   </Link>
                 </Button>
