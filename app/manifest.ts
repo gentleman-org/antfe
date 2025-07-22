@@ -3,50 +3,33 @@ import { MetadataRoute } from 'next';
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: 'AntFE 程序员社区',
+    name: 'AntFE 开发者社区',
     short_name: 'AntFE',
-    description: '连接全球优秀程序员的技术交流平台',
+    description: '连接全球优秀开发者',
     start_url: '/',
     display: 'standalone',
     background_color: '#FFFFFF',
     theme_color: '#3B82F6',
     icons: [
       {
-        src: '/icons/icon-192x192.png',
+        src: '/icons/icon-192x192.ico',
         sizes: '192x192',
-        type: 'image/png',
+        type: 'image/ico',
         purpose: 'maskable',
       },
       {
-        src: '/icons/icon-384x384.png',
-        sizes: '384x384',
-        type: 'image/png',
-      },
-      {
-        src: '/icons/icon-512x512.png',
+        src: '/icons/icon-512x512.ico',
         sizes: '512x512',
-        type: 'image/png',
+        type: 'image/ico',
       },
     ],
     orientation: 'portrait',
     categories: ['social', 'education', 'developer'],
-    screenshots: [
-      {
-        src: '/screenshots/mobile.png',
-        sizes: '540x720',
-        type: 'image/png',
-      },
-      {
-        src: '/screenshots/desktop.png',
-        sizes: '1280x800',
-        type: 'image/png',
-      },
-    ],
     shortcuts: [
       {
         name: '社区',
-        url: '/community',
-        icons: [{ src: '/icons/community.png', sizes: '96x96' }],
+        url: 'https://dc.antfe.com',
+        icons: [{ src: '/icons/community.ico', sizes: '96x96' }],
       },
       {
         name: '技术文章',
