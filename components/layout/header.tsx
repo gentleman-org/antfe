@@ -2,14 +2,11 @@
 
 import { useTranslations } from 'next-intl';
 import { useState, useEffect } from 'react';
-import { Menu, X, Search, Bell, User, Settings, Zap, Github, MessageCircle } from 'lucide-react';
+import { Menu, X, Zap } from 'lucide-react';
 import { Button } from '~/components/ui/button';
 import { ThemeToggle } from '~/components/themeToggle';
 import LocaleSwitcher from '~/components/langSelect/localeSwitcher';
-import { usePathname } from '~/lib/i18n/navigation';
-import Link from 'next/link';
-import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger, DropdownMenuSeparator } from '~/components/ui/dropdown-menu';
-import { Badge } from '~/components/ui/badge';
+import { usePathname, Link } from '~/lib/i18n/navigation'; // Correctly import Link from next-intl's navigation
 
 export default function Header() {
   const t = useTranslations();
@@ -17,7 +14,7 @@ export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
-  // 监听滚动状态
+  // Listen for scroll state
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 20);
@@ -29,23 +26,24 @@ export default function Header() {
   const navigation = [
     { name: t('header.navigation.home'), href: '/' },
     { name: t('header.navigation.community'), href: 'https://dc.antfe.com' },
-    { name: t('header.navigation.articles'), href: '/articles' },
+    // { name: t('header.navigation.articles'), href: '/articles' },
     { name: t('header.navigation.projects'), href: '/projects' },
     { name: t('header.navigation.developers'), href: '/developers' },
-    { name: t('header.navigation.events'), href: '/events' },
+    // { name: t('header.navigation.events'), href: '/events' },
+    { name: 'GitHub', href: 'https://github.com/gentleman-org/antfe' },
   ];
 
   return (
     <>
       <header className={`sticky top-0 right-0 left-0 z-50 transition-all duration-700 ease-out ${isScrolled ? 'liquid-glass-header-scrolled' : 'liquid-glass-header'} `}>
-        {/* 动态彩虹光线 */}
+        {/* Dynamic rainbow light */}
         <div className="through-purple-500/60 absolute top-0 right-0 left-0 h-px animate-pulse bg-gradient-to-r from-transparent via-blue-500/60 to-transparent" />
 
-        {/* 液态玻璃容器 */}
+        {/* Liquid glass container */}
         <div className="liquid-glass-container">
           <nav className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="flex h-16 items-center justify-between">
-              {/* Logo区域 - 增强发光效果 */}
+              {/* Logo area - Enhanced glow effect */}
               <div className="flex items-center space-x-4">
                 <Link href="/" className="group flex items-center space-x-2">
                   <div className="relative">
@@ -61,7 +59,7 @@ export default function Header() {
                 </Link>
               </div>
 
-              {/* 桌面导航 - 增强液态效果 */}
+              {/* Desktop navigation - Enhanced liquid effect */}
               <div className="hidden md:block">
                 <div className="flex items-center space-x-1">
                   {navigation.map((item) => {
@@ -85,67 +83,19 @@ export default function Header() {
                 </div>
               </div>
 
-              {/* 右侧操作区 - 增强玻璃按钮 */}
+              {/* Right action area - Enhanced glass buttons */}
               <div className="flex items-center space-x-2">
-                {/* GitHub按钮 */}
-                <Button variant="ghost" size="icon" className="liquid-glass-button" asChild>
-                  <Link href="https://github.com/gentleman-org/antfe" target="_blank" rel="noopener noreferrer">
-                    <Github className="h-4 w-4" />
-                  </Link>
-                </Button>
-
-                {/* Discord按钮 */}
-                <Button variant="ghost" size="icon" className="liquid-glass-button group relative" asChild title={t('header.actions.discord')}>
-                  <Link href="https://discord.gg/antfe" target="_blank" rel="noopener noreferrer">
-                    <MessageCircle className="h-4 w-4 transition-colors duration-200 group-hover:text-blue-500" />
-                  </Link>
-                </Button>
-
-                {/* 搜索按钮 */}
-                <Button variant="ghost" size="icon" className="liquid-glass-button">
-                  <Search className="h-4 w-4" />
-                </Button>
-
-                {/* 通知按钮 */}
-                <Button variant="ghost" size="icon" className="liquid-glass-button relative">
-                  <Bell className="h-4 w-4" />
-                  <Badge className="absolute -top-1 -right-1 h-3 w-3 animate-pulse border-2 border-white bg-gradient-to-r from-red-500 to-pink-500 p-0 dark:border-black">
-                    <span className="sr-only">3</span>
-                  </Badge>
-                </Button>
-
-                {/* 语言切换 */}
+                {/* Language switcher */}
                 <div className="liquid-glass-container-small">
                   <LocaleSwitcher />
                 </div>
 
-                {/* 主题切换 */}
+                {/* Theme toggle */}
                 <div className="liquid-glass-container-small">
                   <ThemeToggle />
                 </div>
 
-                {/* 用户菜单 */}
-                <DropdownMenu>
-                  <DropdownMenuTrigger asChild>
-                    <Button variant="ghost" className="liquid-glass-button">
-                      <User className="h-4 w-4" />
-                    </Button>
-                  </DropdownMenuTrigger>
-                  <DropdownMenuContent align="end" className="liquid-glass-dropdown mt-2 w-56">
-                    <DropdownMenuItem>
-                      <User className="mr-2 h-4 w-4" />
-                      {t('header.actions.profile')}
-                    </DropdownMenuItem>
-                    <DropdownMenuItem>
-                      <Settings className="mr-2 h-4 w-4" />
-                      {t('header.actions.settings')}
-                    </DropdownMenuItem>
-                    <DropdownMenuSeparator />
-                    <DropdownMenuItem className="text-red-600 dark:text-red-400">退出登录</DropdownMenuItem>
-                  </DropdownMenuContent>
-                </DropdownMenu>
-
-                {/* 移动端菜单按钮 */}
+                {/* Mobile menu button */}
                 <Button variant="ghost" size="icon" className="liquid-glass-button md:hidden" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
                   {isMobileMenuOpen ? <X className="h-4 w-4" /> : <Menu className="h-4 w-4" />}
                 </Button>
@@ -154,11 +104,11 @@ export default function Header() {
           </nav>
         </div>
 
-        {/* 底部彩虹光线 */}
+        {/* Bottom rainbow light */}
         <div className="through-pink-500/50 absolute right-0 bottom-0 left-0 h-px bg-gradient-to-r from-transparent via-purple-500/50 to-transparent" />
       </header>
 
-      {/* 移动端菜单 - 增强液态效果 */}
+      {/* Mobile menu - Enhanced liquid effect */}
       {isMobileMenuOpen && (
         <div className="fixed inset-x-0 top-16 z-40 md:hidden">
           <div className="liquid-glass-mobile-menu">
@@ -184,7 +134,7 @@ export default function Header() {
         </div>
       )}
 
-      {/* 遮罩层 - 增强模糊 */}
+      {/* Overlay - Enhanced blur */}
       {isMobileMenuOpen && (
         <div className="fixed inset-0 top-16 z-30 bg-black/20 backdrop-blur-md transition-all duration-300 md:hidden" onClick={() => setIsMobileMenuOpen(false)} />
       )}

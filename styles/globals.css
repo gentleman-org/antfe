@@ -128,7 +128,7 @@
   }
 }
 
-/* 主题切换过渡动画 */
+/* Theme transition animation */
 .theme-transition * {
   transition:
     background-color 0.3s ease-in-out,
@@ -136,7 +136,7 @@
     border-color 0.3s ease-in-out;
 }
 
-/* 可选：添加淡入淡出动画 */
+/* Optional: Add fade in/out animation */
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -150,9 +150,9 @@ html {
   animation: fadeIn 0.3s ease-in-out;
 }
 
-/* ============ iOS26风格液态玻璃效果 ============ */
+/* ============ iOS26 Style Liquid Glass Effects ============ */
 
-/* Header液态玻璃效果 */
+/* Header liquid glass effect */
 .liquid-glass-header {
   background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0)), linear-gradient(rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.02));
   backdrop-filter: blur(20px) saturate(180%);
@@ -187,7 +187,7 @@ html {
     inset 0 -1px 0 rgba(255, 255, 255, 0.05);
 }
 
-/* 液态玻璃容器 */
+/* Liquid glass container */
 .liquid-glass-container {
   position: relative;
   background: radial-gradient(ellipse at top, rgba(255, 255, 255, 0.1), transparent 70%), linear-gradient(to bottom, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.02));
@@ -209,7 +209,7 @@ html {
   background: radial-gradient(ellipse at top, rgba(255, 255, 255, 0.05), transparent 70%), linear-gradient(to bottom, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.01));
 }
 
-/* 小型液态玻璃容器 */
+/* Small liquid glass container */
 .liquid-glass-container-small {
   background: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.1)), linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
   backdrop-filter: blur(15px) saturate(180%);
@@ -230,7 +230,7 @@ html {
     inset 0 1px 0 rgba(255, 255, 255, 0.1);
 }
 
-/* 液态玻璃按钮 */
+/* Liquid glass button */
 .liquid-glass-button {
   background: linear-gradient(135deg, rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.1)), linear-gradient(rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.05));
   backdrop-filter: blur(15px) saturate(180%);
@@ -270,7 +270,7 @@ html {
     inset 0 1px 0 rgba(255, 255, 255, 0.25);
 }
 
-/* 主要按钮液态玻璃效果 */
+/* Primary button liquid glass effect */
 .liquid-glass-button-primary {
   background: linear-gradient(135deg, rgba(59, 130, 246, 0.9), rgba(147, 51, 234, 0.8)), linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.1));
   backdrop-filter: blur(15px) saturate(180%);
@@ -297,7 +297,7 @@ html {
   transform: translateY(-2px) scale(1.02);
 }
 
-/* 次要按钮液态玻璃效果 */
+/* Secondary button liquid glass effect */
 .liquid-glass-button-secondary {
   background: linear-gradient(135deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.1)), linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.05));
   backdrop-filter: blur(15px) saturate(180%);
@@ -331,7 +331,7 @@ html {
   border: 2px solid rgba(255, 255, 255, 0.3);
 }
 
-/* 导航项液态效果 */
+/* Navigation item liquid effect */
 .liquid-nav-item {
   position: relative;
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
@@ -353,7 +353,7 @@ html {
     0 0 20px rgba(59, 130, 246, 0.1);
 }
 
-/* 液态指示器 */
+/* Liquid indicator */
 .liquid-indicator {
   background: linear-gradient(90deg, rgba(59, 130, 246, 0.8), rgba(147, 51, 234, 0.8), rgba(236, 72, 153, 0.8));
   box-shadow:
@@ -394,7 +394,7 @@ html {
   }
 }
 
-/* 液态玻璃卡片 */
+/* Liquid glass card */
 .liquid-glass-card {
   background: linear-gradient(135deg, rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.1)), linear-gradient(rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.05));
   backdrop-filter: blur(20px) saturate(180%);
@@ -433,7 +433,7 @@ html {
     inset 0 1px 0 rgba(255, 255, 255, 0.25);
 }
 
-/* 液态玻璃徽章 */
+/* Liquid glass badge */
 .liquid-glass-badge {
   background: linear-gradient(135deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.1)), linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.05));
   backdrop-filter: blur(15px) saturate(180%);
@@ -449,7 +449,7 @@ html {
   border: 1px solid rgba(255, 255, 255, 0.15);
 }
 
-/* 移动端菜单液态玻璃 */
+/* Mobile menu liquid glass */
 .liquid-glass-mobile-menu {
   background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.8)), linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
   backdrop-filter: blur(40px) saturate(200%);
@@ -468,7 +468,7 @@ html {
     inset 0 1px 0 rgba(255, 255, 255, 0.2);
 }
 
-/* 下拉菜单液态玻璃 */
+/* Dropdown menu liquid glass */
 .liquid-glass-dropdown {
   background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.8)), linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
   backdrop-filter: blur(40px) saturate(200%);
@@ -488,9 +488,9 @@ html {
     inset 0 1px 0 rgba(255, 255, 255, 0.2);
 }
 
-/* 科技风增强样式 */
+/* Tech-style enhanced styles */
 
-/* 玻璃模糊效果增强 */
+/* Enhanced glass blur effect */
 .glass-morphism {
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(20px);
@@ -505,7 +505,7 @@ html {
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
 }
 
-/* 液态发光效果 */
+/* Liquid glow effect */
 .liquid-glow {
   position: relative;
 }
@@ -527,7 +527,7 @@ html {
   opacity: 0.8;
 }
 
-/* 霓虹发光效果 */
+/* Neon glow effect */
 .neon-glow {
   box-shadow:
     0 0 5px theme('colors.blue.500'),
@@ -544,7 +544,7 @@ html {
     0 0 20px theme('colors.blue.400');
 }
 
-/* 渐变边框 */
+/* Gradient border */
 .gradient-border {
   background: linear-gradient(45deg, theme('colors.blue.500'), theme('colors.purple.500'));
   padding: 1px;
@@ -562,7 +562,7 @@ html {
   background: theme('colors.gray.900');
 }
 
-/* 动态背景网格 */
+/* Dynamic background grid */
 .grid-background {
   background-image: linear-gradient(rgba(0, 0, 0, 0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(0, 0, 0, 0.1) 1px, transparent 1px);
   background-size: 2rem 2rem;
@@ -573,7 +573,7 @@ html {
   background-image: linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
 }
 
-/* 悬浮动画 */
+/* Hover animation */
 @keyframes float {
   0%,
   100% {
@@ -588,7 +588,7 @@ html {
   animation: float 6s ease-in-out infinite;
 }
 
-/* 脉冲发光动画 */
+/* Pulse glow animation */
 @keyframes pulse-glow {
   0%,
   100% {
@@ -605,7 +605,7 @@ html {
   animation: pulse-glow 2s ease-in-out infinite;
 }
 
-/* 渐变文本动画 */
+/* Gradient text animation */
 @keyframes gradient-shift {
   0%,
   100% {
@@ -625,7 +625,7 @@ html {
   -webkit-text-fill-color: transparent;
 }
 
-/* 自定义滚动条 */
+/* Custom scrollbar */
 ::-webkit-scrollbar {
   width: 8px;
 }
@@ -648,7 +648,7 @@ html {
   background: rgba(255, 255, 255, 0.1);
 }
 
-/* 响应式优化 */
+/* Responsive optimization */
 @media (max-width: 768px) {
   .liquid-glass-card,
   .liquid-glass-button,
@@ -658,7 +658,7 @@ html {
   }
 }
 
-/* 高对比度模式支持 */
+/* High contrast mode support */
 @media (prefers-contrast: high) {
   .liquid-glass-card,
   .liquid-glass-button,
@@ -675,7 +675,7 @@ html {
   }
 }
 
-/* 减少动画设置支持 */
+/* Reduced motion support */
 @media (prefers-reduced-motion: reduce) {
   .float-animation,
   .pulse-glow,

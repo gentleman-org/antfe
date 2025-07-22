@@ -50,19 +50,19 @@ export default function Home() {
       <div className="relative">
         {/* Hero Section */}
         <section className="relative flex min-h-screen items-center justify-center overflow-hidden">
-          {/* 背景装饰 */}
+          {/* Background decoration */}
           <div className="absolute inset-0 bg-gradient-to-br from-blue-50/50 via-transparent to-purple-50/50 dark:from-blue-950/20 dark:via-transparent dark:to-purple-950/20" />
 
-          {/* 动态网格背景 */}
+          {/* Dynamic grid background */}
           <div className="grid-background absolute inset-0" />
 
-          {/* 浮动光圈 */}
+          {/* Floating orbs */}
           <div className="absolute top-1/4 left-1/4 h-72 w-72 animate-pulse rounded-full bg-blue-500/10 blur-3xl" />
           <div className="absolute right-1/4 bottom-1/4 h-96 w-96 animate-pulse rounded-full bg-purple-500/10 blur-3xl delay-1000" />
 
           <div className="relative z-10 mx-auto max-w-7xl px-4 text-center sm:px-6 lg:px-8">
             <div className="space-y-8">
-              {/* 标题区域 */}
+              {/* Title area */}
               <div className="space-y-6">
                 <div className="liquid-glass-badge inline-flex items-center space-x-2 rounded-full px-4 py-2">
                   <Sparkles className="h-4 w-4 text-blue-500" />
@@ -78,7 +78,7 @@ export default function Home() {
                 <p className="mx-auto max-w-2xl text-lg text-gray-500 dark:text-gray-400">{t('description')}</p>
               </div>
 
-              {/* CTA 按钮 */}
+              {/* CTA buttons */}
               <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
                 <Button size="lg" className="group liquid-glass-button-primary" asChild>
                   <Link href="/community">
@@ -100,7 +100,7 @@ export default function Home() {
                 </Button>
               </div>
 
-              {/* 统计数据 */}
+              {/* Statistics */}
               <div className="grid grid-cols-2 gap-8 pt-16 md:grid-cols-4">
                 {[
                   { number: '1000+', label: '活跃开发者' },
@@ -131,16 +131,16 @@ export default function Home() {
             <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
               {features.map((feature, index) => (
                 <div key={index} className="group liquid-glass-card float-animation relative rounded-2xl p-6" style={{ animationDelay: `${index * 0.2}s` }}>
-                  {/* 背景渐变 */}
+                  {/* Background gradient */}
                   <div className={`absolute inset-0 rounded-2xl bg-gradient-to-br ${feature.gradient} opacity-0 transition-opacity duration-500 group-hover:opacity-5`} />
 
                   <div className="relative space-y-4">
-                    {/* 图标 */}
+                    {/* Icon */}
                     <div className={`inline-flex rounded-xl bg-gradient-to-br p-3 ${feature.gradient} liquid-glow shadow-lg transition-all duration-300 group-hover:shadow-xl`}>
                       <feature.icon className="h-6 w-6 text-white" />
                     </div>
 
-                    {/* 内容 */}
+                    {/* Content */}
                     <div className="space-y-2">
                       <h3 className="text-xl font-semibold text-gray-900 dark:text-white">{feature.title}</h3>
                       <p className="leading-relaxed text-gray-600 dark:text-gray-400">{feature.description}</p>

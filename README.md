@@ -1,254 +1,254 @@
-# AntFE 程序员社区
+# AntFE Developer Community
 
-## 🌟 项目概览
+## 🌟 Project Overview
 
-**AntFE 程序员社区** 是一个专为程序员打造的现代化技术交流平台，致力于连接全球优秀开发者，分享前沿技术、讨论编程实践、构建开源项目。在这里，每个程序员都能找到志同道合的伙伴。
+**AntFE Developer Community** is a modern technology exchange platform designed for programmers, dedicated to connecting outstanding developers worldwide, sharing cutting-edge technologies, discussing programming practices, and building open-source projects. Here, every programmer can find like-minded partners.
 
-### 🎯 社区特色
+### 🎯 Community Features
 
-- 🚀 **技术交流**: 与全球优秀程序员分享经验，讨论最新技术趋势
-- 🎨 **现代设计**: 基于液态玻璃设计，提供优雅的用户体验
-- 🌍 **多元文化**: 支持多语言交流，连接不同国家和地区的开发者
-- 🔧 **开源精神**: 拥抱开源文化，共同构建更好的开发者生态
-- ⚡ **高性能**: 基于 Next.js 15 构建，享受极致的浏览体验
-- 📱 **PWA 支持**: 移动端原生应用体验
-
----
-
-## 🛠 技术架构
-
-**基于模版：[nextjs-ai-starter](https://github.com/vadxq/nextjs-ai-starter)**
-
-### 前端框架
-
-- **Next.js 15** - 最新的 React 全栈框架，使用 App Router
-- **React 19** - 最新的 React 版本，支持新特性
-- **TypeScript 5.8** - 静态类型检查和代码提示
-
-### 样式和 UI
-
-- **Tailwind CSS 4.1** - 原子化 CSS 框架
-- **Shadcn UI** - 基于 Radix UI 的组件库
-- **液态玻璃设计** - iOS26 风格的现代化 UI 效果
-- **Lucide React** - 现代化图标库
-
-### 功能特性
-
-- **SWR 2.3** - 数据获取和缓存
-- **Next-intl 4.3** - 国际化解决方案
-- **Next-themes 0.4** - 主题切换支持
-- **Serwist 9.0** - PWA 和 Service Worker
+- 🚀 **Technical Exchange**: Share experiences with outstanding programmers worldwide and discuss the latest technology trends
+- 🎨 **Modern Design**: Based on liquid glass design, providing an elegant user experience
+- 🌍 **Multicultural**: Support multi-language communication, connecting developers from different countries and regions
+- 🔧 **Open Source Spirit**: Embrace open source culture and build a better developer ecosystem together
+- ⚡ **High Performance**: Built on Next.js 15, enjoy an ultimate browsing experience
+- 📱 **PWA Support**: Native mobile app experience
 
 ---
 
-## 📁 项目结构
+## 🛠 Technical Architecture
+
+**Based on template: [nextjs-ai-starter](https://github.com/vadxq/nextjs-ai-starter)**
+
+### Frontend Framework
+
+- **Next.js 15** - Latest React full-stack framework using App Router
+- **React 19** - Latest React version with new features support
+- **TypeScript 5.8** - Static type checking and code hints
+
+### Styling and UI
+
+- **Tailwind CSS 4.1** - Atomic CSS framework
+- **Shadcn UI** - Component library based on Radix UI
+- **Liquid Glass Design** - iOS26-style modern UI effects
+- **Lucide React** - Modern icon library
+
+### Features
+
+- **SWR 2.3** - Data fetching and caching
+- **Next-intl 4.3** - Internationalization solution
+- **Next-themes 0.4** - Theme switching support
+- **Serwist 9.0** - PWA and Service Worker
+
+---
+
+## 📁 Project Structure
 
 ```bash
 antfe/
 ├── app/                          # Next.js App Router
-│   ├── [locale]/                # 国际化路由
-│   │   ├── layout.tsx           # 全局布局
-│   │   ├── page.tsx             # 首页
-│   │   └── ~offline/            # PWA 离线页面
-│   ├── api/                     # API 路由
-│   ├── manifest.ts              # PWA 清单
+│   ├── [locale]/                # Internationalization routes
+│   │   ├── layout.tsx           # Global layout
+│   │   ├── page.tsx             # Homepage
+│   │   └── ~offline/            # PWA offline page
+│   ├── api/                     # API routes
+│   ├── manifest.ts              # PWA manifest
 │   └── sw.ts                    # Service Worker
-├── components/                   # React 组件
-│   ├── ui/                      # Shadcn UI 组件
-│   ├── layout/                  # 布局组件
-│   │   ├── header.tsx           # 社区导航
-│   │   ├── footer.tsx           # 页脚
-│   │   └── pageLayout.tsx       # 页面布局
-│   ├── provider/                # Context 提供者
-│   └── themeToggle.tsx          # 主题切换
-├── lib/                         # 工具库
-│   ├── http/                    # HTTP 客户端
-│   ├── i18n/                    # 国际化配置
-│   └── utils.ts                 # 通用工具
-├── locales/                     # 语言文件
-│   ├── en.json                  # 英文
-│   └── zh-CN.json               # 中文
-└── styles/                      # 样式文件
-    └── globals.css              # 全局样式（含液态玻璃效果）
+├── components/                   # React components
+│   ├── ui/                      # Shadcn UI components
+│   ├── layout/                  # Layout components
+│   │   ├── header.tsx           # Community navigation
+│   │   ├── footer.tsx           # Footer
+│   │   └── pageLayout.tsx       # Page layout
+│   ├── provider/                # Context providers
+│   └── themeToggle.tsx          # Theme toggle
+├── lib/                         # Utility libraries
+│   ├── http/                    # HTTP client
+│   ├── i18n/                    # Internationalization config
+│   └── utils.ts                 # Common utilities
+├── locales/                     # Language files
+│   ├── en.json                  # English
+│   └── zh-CN.json               # Chinese
+└── styles/                      # Style files
+    └── globals.css              # Global styles (with liquid glass effects)
 ```
 
 ---
 
-## ✨ 社区功能
+## ✨ Community Features
 
-### 🤝 技术交流
+### 🤝 Technical Exchange
 
-- **技术讨论**: 参与各种编程语言和技术框架的深度讨论
-- **经验分享**: 分享项目经验、最佳实践和踩坑记录
-- **代码评审**: 获得社区成员的代码反馈和建议
+- **Technical Discussions**: Participate in in-depth discussions on various programming languages and technology frameworks
+- **Experience Sharing**: Share project experiences, best practices, and lessons learned
+- **Code Reviews**: Get code feedback and suggestions from community members
 
-### 🌍 开源项目
+### 🌍 Open Source Projects
 
-- **项目展示**: 展示你的开源项目，获得社区关注
-- **协作开发**: 与其他开发者一起构建有趣的项目
-- **技能提升**: 通过参与开源项目提升编程技能
+- **Project Showcase**: Showcase your open source projects and gain community attention
+- **Collaborative Development**: Build interesting projects with other developers
+- **Skill Enhancement**: Improve programming skills by participating in open source projects
 
-### 💼 职业发展
+### 💼 Career Development
 
-- **面试指导**: 获取技术面试经验和建议
-- **职业规划**: 与资深开发者讨论职业发展路径
-- **人才推荐**: 发现优秀的工作机会和人才
+- **Interview Guidance**: Get technical interview experience and advice
+- **Career Planning**: Discuss career development paths with senior developers
+- **Talent Recommendations**: Discover excellent job opportunities and talent
 
-### 📚 学习资源
+### 📚 Learning Resources
 
-- **技术文章**: 阅读社区成员分享的高质量技术文章
-- **在线课程**: 参与社区组织的技术培训和研讨会
-- **开发工具**: 发现和分享有用的开发工具和资源
+- **Technical Articles**: Read high-quality technical articles shared by community members
+- **Online Courses**: Participate in technical training and seminars organized by the community
+- **Development Tools**: Discover and share useful development tools and resources
 
 ---
 
-## 🚀 快速开始
+## 🚀 Quick Start
 
-### 1. 环境要求
+### 1. Requirements
 
 - Node.js 22+
 - Git
 
-### 2. 本地运行
+### 2. Local Development
 
 ```bash
-# 克隆项目
+# Clone the project
 git clone https://github.com/gentleman-org/antfe.git
 cd antfe
 
-# 安装依赖
+# Install dependencies
 npm install
 
-# 启动开发服务器
+# Start development server
 npm run dev
 
-# 构建生产版本
+# Build for production
 npm run build
 
-# 启动生产服务器
+# Start production server
 npm run start
 ```
 
-### 3. 开发脚本
+### 3. Development Scripts
 
 ```bash
-# 代码检查和格式化
-npm run lint              # 运行 ESLint + Prettier
-npm run lint:pretty       # 快速格式化
+# Code checking and formatting
+npm run lint              # Run ESLint + Prettier
+npm run lint:pretty       # Quick formatting
 
-# 生成变更日志
-npm run log               # 基于 Git 提交生成 CHANGELOG
+# Generate changelog
+npm run log               # Generate CHANGELOG based on Git commits
 ```
 
 ---
 
-## 🌟 社区数据
+## 🌟 Community Statistics
 
-- 🧑‍💻 **1000+** 活跃开发者
-- 📝 **500+** 技术文章
-- 🔧 **100+** 开源项目
-- 🌍 **24/7** 社区活动
-
----
-
-## 📋 发展计划
-
-### 🎯 近期目标
-
-- [ ] **用户系统**
-  - [ ] 用户注册和登录
-  - [ ] 个人资料管理
-  - [ ] 用户权限系统
-
-- [ ] **社区功能**
-  - [ ] 技术讨论区
-  - [ ] 文章发布系统
-  - [ ] 项目展示平台
-  - [ ] 评论和点赞功能
-
-- [ ] **内容管理**
-  - [ ] 文章编辑器
-  - [ ] 代码高亮
-  - [ ] 图片上传
-  - [ ] 标签系统
-
-### 🛠 中期计划
-
-- [ ] **高级功能**
-  - [ ] 实时聊天系统
-  - [ ] 视频会议集成
-  - [ ] 在线代码编辑器
-  - [ ] AI 助手集成
-
-- [ ] **移动应用**
-  - [ ] 离线阅读功能
-  - [ ] 推送通知
-
-### 🔍 长期愿景
-
-- [ ] **全球化**
-  - [ ] 多语言支持扩展
-  - [ ] 国际社区运营
-  - [ ] 本地化活动
-
-- [ ] **商业化**
-  - [ ] 企业版功能
-  - [ ] 付费课程平台
-  - [ ] 人才招聘服务
+- 🧑‍💻 **1000+** Active developers
+- 📝 **500+** Technical articles
+- 🔧 **100+** Open source projects
+- 🌍 **24/7** Community activities
 
 ---
 
-## 🤝 参与贡献
+## 📋 Development Plan
 
-我们欢迎所有形式的贡献！
+### 🎯 Short-term Goals
 
-### 贡献方式
+- [ ] **User System**
+  - [ ] User registration and login
+  - [ ] Profile management
+  - [ ] User permission system
 
-1. **代码贡献**: 修复 Bug、新增功能、性能优化
-2. **文档改进**: 完善文档、翻译内容
-3. **社区运营**: 组织活动、内容审核、用户支持
-4. **反馈建议**: 提出改进建议、报告问题
+- [ ] **Community Features**
+  - [ ] Technical discussion areas
+  - [ ] Article publishing system
+  - [ ] Project showcase platform
+  - [ ] Comments and likes functionality
 
-### 贡献流程
+- [ ] **Content Management**
+  - [ ] Article editor
+  - [ ] Code highlighting
+  - [ ] Image upload
+  - [ ] Tag system
 
-1. Fork 项目
-2. 创建功能分支
-3. 提交代码
-4. 创建 Pull Request
-5. 代码审查
-6. 合并代码
+### 🛠 Medium-term Plans
+
+- [ ] **Advanced Features**
+  - [ ] Real-time chat system
+  - [ ] Video conference integration
+  - [ ] Online code editor
+  - [ ] AI assistant integration
+
+- [ ] **Mobile Application**
+  - [ ] Offline reading functionality
+  - [ ] Push notifications
+
+### 🔍 Long-term Vision
+
+- [ ] **Globalization**
+  - [ ] Multi-language support expansion
+  - [ ] International community operations
+  - [ ] Localized activities
+
+- [ ] **Commercialization**
+  - [ ] Enterprise version features
+  - [ ] Paid course platform
+  - [ ] Talent recruitment services
 
 ---
 
-## 📚 相关资源
+## 🤝 Contributing
 
-### 官方链接
+We welcome all forms of contributions!
 
-- [GitHub 仓库](https://github.com/gentleman-org/antfe)
-- [在线预览](https://antfe.com)
-- [技术文档](https://github.com/gentleman-org/antfe/wiki)
-- [问题反馈](https://github.com/gentleman-org/antfe/issues)
+### Ways to Contribute
 
-### 社区资源
+1. **Code Contributions**: Fix bugs, add features, optimize performance
+2. **Documentation Improvements**: Improve documentation, translate content
+3. **Community Operations**: Organize events, content moderation, user support
+4. **Feedback and Suggestions**: Propose improvements, report issues
 
-- [Discord 群组](https://dc.antfe.com)
-- [技术讨论](https://github.com/gentleman-org/antfe/discussions)
+### Contribution Process
 
----
-
-## 📄 开源许可
-
-本项目基于 [Apache License 2.0](https://github.com/gentleman-org/antfe/blob/main/LICENSE) 开源。
-
-本项目基于原始模版项目 [Apache License 2.0](https://github.com/vadxq/nextjs-ai-starter/blob/main/LICENSE) 开源。
+1. Fork the project
+2. Create a feature branch
+3. Submit code
+4. Create a Pull Request
+5. Code review
+6. Merge code
 
 ---
 
-## 💬 联系我们
+## 📚 Related Resources
 
-- **项目维护者**: [@vadxq](https://github.com/vadxq)
+### Official Links
+
+- [GitHub Repository](https://github.com/gentleman-org/antfe)
+- [Online Preview](https://antfe.com)
+- [Technical Documentation](https://github.com/gentleman-org/antfe/wiki)
+- [Issue Feedback](https://github.com/gentleman-org/antfe/issues)
+
+### Community Resources
+
+- [Discord Group](https://dc.antfe.com)
+- [Technical Discussions](https://github.com/gentleman-org/antfe/discussions)
+
+---
+
+## 📄 Open Source License
+
+This project is open source under [Apache License 2.0](https://github.com/gentleman-org/antfe/blob/main/LICENSE).
+
+This project is based on the original template project [Apache License 2.0](https://github.com/vadxq/nextjs-ai-starter/blob/main/LICENSE).
+
+---
+
+## 💬 Contact Us
+
+- **Project Maintainer**: [@vadxq](https://github.com/vadxq)
 - **Twitter**: [@vadxqDon](https://twitter.com/vadxqDon)
 
 ---
 
-**感谢您对 AntFE 程序员社区的关注！一起构建更好的开发者生态！** 🚀
+**Thank you for your attention to the AntFE Developer Community! Let's build a better developer ecosystem together!** 🚀

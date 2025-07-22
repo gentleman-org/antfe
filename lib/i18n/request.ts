@@ -1,11 +1,11 @@
 import { getRequestConfig } from 'next-intl/server';
 import { routing, Locale } from './routing';
 
-// 静态导入所有语言文件
+// Static import of all language files
 import enMessages from '../../locales/en.json';
 import zhCNMessages from '../../locales/zh-CN.json';
 
-// 创建消息映射
+// Create message mapping
 const messages = {
   en: enMessages,
   'zh-CN': zhCNMessages,

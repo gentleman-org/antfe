@@ -108,5 +108,38 @@
     "title": "AntFE Developer Community",
     "description": "Global developer tech exchange platform",
     "tips": "Check your internet connection"
+  },
+  "auth": {
+    "signIn": "Sign In",
+    "signOut": "Sign Out",
+    "welcome": "Welcome, {name}!",
+    "notSignedIn": "Not signed in",
+    "loading": "Loading...",
+    "demo": {
+      "title": "Authentication Demo",
+      "serverSide": "Server-Side Authentication",
+      "clientSide": "Client-Side Authentication",
+      "methods": "Authentication Methods",
+      "status": "Status",
+      "userId": "User ID",
+      "userName": "User Name",
+      "email": "Email",
+      "username": "Username",
+      "avatar": "Avatar",
+      "currentUser": "Current User",
+      "signedIn": "Signed in",
+      "notSignedIn": "Not signed in",
+      "notAuthenticated": "Not authenticated",
+      "available": "Available",
+      "notAvailable": "Not available",
+      "none": "None",
+      "userData": "User Data",
+      "useAuthHook": "useAuth() Hook",
+      "useUserHook": "useUser() Hook",
+      "authHelper": "auth() Helper",
+      "useAuthDescription": "Check authentication status on the client side",
+      "useUserDescription": "Access user data on the client side",
+      "authHelperDescription": "Check authentication status on the server side"
+    }
   }
 }

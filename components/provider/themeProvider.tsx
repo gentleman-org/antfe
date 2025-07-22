@@ -16,14 +16,14 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
   const [resolvedTheme, setResolvedTheme] = React.useState<Exclude<Theme, 'system'>>('light');
   const [mounted, setMounted] = React.useState(false);
 
-  // 初始化时从localStorage读取保存的主题
+  // Initialize theme from localStorage on mount
   React.useEffect(() => {
     const savedTheme = (localStorage.getItem('theme') as Theme) || 'system';
     setTheme(savedTheme);
     setMounted(true);
   }, []);
 
-  // 处理主题变化
+  // Handle theme changes
   React.useEffect(() => {
     const root = document.documentElement;
     const systemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
@@ -32,11 +32,11 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
 
     setResolvedTheme(actualTheme);
 
-    // 添加过渡动画
+    // Add transition animation
     root.classList.add('theme-transition');
     root.style.transition = 'all 0.3s ease-in-out';
 
-    // 延迟移除过渡效果
+    // Delay removing transition effect
     setTimeout(() => {
       root.classList.remove('theme-transition');
     }, 300);
@@ -45,7 +45,7 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
     root.classList.add(actualTheme);
     root.style.colorScheme = actualTheme;
 
-    // 保存到localStorage
+    // Save to localStorage
     if (theme !== 'system') {
       localStorage.setItem('theme', theme);
     } else {
@@ -53,7 +53,7 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
     }
   }, [theme]);
 
-  // 监听系统主题变化
+  // Listen for system theme changes
   React.useEffect(() => {
     if (theme !== 'system') return;
 

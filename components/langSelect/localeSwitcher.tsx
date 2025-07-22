@@ -6,7 +6,7 @@ export default function LocaleSwitcher() {
   const t = useTranslations('localeSwitcher');
   const locale = useLocale();
 
-  // 创建语言选项数组
+  // Create language options array
   const options = routing.locales.map((cur) => ({
     value: cur,
     label: t('locale', { locale: cur.replace('-', '') }),

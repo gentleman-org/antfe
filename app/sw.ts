@@ -27,7 +27,7 @@ const serwist = new Serwist({
     //     cacheName: 'api-cache',
     //     expiration: {
     //       maxEntries: 50,
-    //       maxAgeSeconds: 60 * 60 * 24 // 24小时
+    //       maxAgeSeconds: 60 * 60 * 24 // 24 hours
     //     }
     //   }
     // },
@@ -39,7 +39,7 @@ const serwist = new Serwist({
     //     cacheName: 'images-cache',
     //     expiration: {
     //       maxEntries: 200,
-    //       maxAgeSeconds: 60 * 60 * 24 * 30, // 30天
+    //       maxAgeSeconds: 60 * 60 * 24 * 30, // 30 days
     //     },
     //   },
     // },
@@ -51,7 +51,7 @@ const serwist = new Serwist({
     //     cacheName: 'fonts-cache',
     //     expiration: {
     //       maxEntries: 50,
-    //       maxAgeSeconds: 60 * 60 * 24 * 365, // 1年
+    //       maxAgeSeconds: 60 * 60 * 24 * 365, // 1 year
     //     },
     //   },
     // }
@@ -70,7 +70,7 @@ const serwist = new Serwist({
 
 // // add specific network listener
 // self.addEventListener('fetch', (event) => {
-//   // 特定处理逻辑...
+//   // Specific processing logic...
 // });
 
 // // add PUSH notification support

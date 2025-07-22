@@ -68,18 +68,18 @@ export default function Footer() {
 
   return (
     <footer className="relative mt-20 border-t border-white/10 dark:border-white/5">
-      {/* 背景装饰 */}
+      {/* Background decoration */}
       <div className="absolute inset-0 bg-gradient-to-br from-blue-50/30 via-transparent to-purple-50/30 dark:from-blue-950/10 dark:via-transparent dark:to-purple-950/10" />
       <div className="absolute top-0 right-0 left-0 h-px bg-gradient-to-r from-transparent via-blue-500/30 to-transparent" />
 
       <div className="relative bg-white/60 backdrop-blur-sm dark:bg-black/60">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          {/* 主要内容区域 */}
+          {/* Main content area */}
           <div className="py-16">
             <div className="grid grid-cols-1 gap-8 lg:grid-cols-12">
-              {/* 品牌和订阅区域 */}
+              {/* Brand and subscription area */}
               <div className="space-y-8 lg:col-span-5">
-                {/* 品牌区域 */}
+                {/* Brand area */}
                 <div className="space-y-4">
                   <div className="flex items-center space-x-3">
                     <div className="relative">
@@ -97,7 +97,7 @@ export default function Footer() {
                   </p>
                 </div>
 
-                {/* 订阅区域 */}
+                {/* Subscription area */}
                 <div className="space-y-4">
                   <div>
                     <h3 className="mb-2 text-lg font-semibold text-gray-900 dark:text-white">{t('footer.newsletter.title')}</h3>
@@ -127,7 +127,7 @@ export default function Footer() {
                 </div>
               </div>
 
-              {/* 链接区域 */}
+              {/* Links area */}
               <div className="lg:col-span-7">
                 <div className="grid grid-cols-2 gap-8 md:grid-cols-4">
                   {footerSections.map((section) => (
@@ -152,13 +152,13 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* 分隔线 */}
+          {/* Divider */}
           <div className="h-px border-t border-white/10 bg-gradient-to-r from-transparent via-blue-500/10 to-transparent dark:border-white/5" />
 
-          {/* 底部区域 */}
+          {/* Bottom area */}
           <div className="py-8">
             <div className="flex flex-col items-center justify-between space-y-4 md:flex-row md:space-y-0">
-              {/* 版权信息 */}
+              {/* Copyright info */}
               <div className="flex flex-col items-center space-y-2 text-sm text-gray-600 md:flex-row md:space-y-0 md:space-x-6 dark:text-gray-400">
                 <p>{t('footer.copyright')}</p>
                 <div className="hidden h-1 w-1 rounded-full bg-gray-400 md:block" />
@@ -168,9 +168,9 @@ export default function Footer() {
                 </p>
               </div>
 
-              {/* 社交链接和回到顶部 */}
+              {/* Social links and back to top */}
               <div className="flex items-center space-x-4">
-                {/* 社交媒体 */}
+                {/* Social media */}
                 <div className="flex items-center space-x-3">
                   {socialLinks.map((social) => (
                     <Link
@@ -185,7 +185,7 @@ export default function Footer() {
                   ))}
                 </div>
 
-                {/* 回到顶部按钮 */}
+                {/* Back to top button */}
                 <Button
                   onClick={scrollToTop}
                   variant="ghost"
@@ -200,7 +200,7 @@ export default function Footer() {
         </div>
       </div>
 
-      {/* 底部装饰光线 */}
+      {/* Bottom decoration light */}
       <div className="absolute right-0 bottom-0 left-0 h-px bg-gradient-to-r from-transparent via-purple-500/30 to-transparent" />
     </footer>
   );

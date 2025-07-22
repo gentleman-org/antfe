@@ -22,7 +22,7 @@
 import { useQuery, useMutation } from '~/lib/http';
 
 function UserList() {
-  // 获取数据
+  // Get data
   const {
     data: users,
     error,
@@ -31,7 +31,7 @@ function UserList() {
     showErrorToast: true,
   });
 
-  // 提交数据
+  // Submit data
   const { trigger, isMutating } = useMutation<User, Partial<User>>('/api/users', {
     showErrorToast: true,
   });
@@ -43,7 +43,7 @@ function UserList() {
     });
   };
 
-  // 渲染UI
+  // Render UI
 }
 ```
 
@@ -52,23 +52,23 @@ function UserList() {
 ```tsx
 import { createApiClient } from '~/lib/http';
 
-// 创建API客户端
+// Create API client
 const api = createApiClient();
 
-// 创建特定资源的API
+// Create resource-specific API
 const usersApi = api.createResourceApi<User, Partial<User>>('/users');
 
 function UserComponent() {
-  // 获取用户列表
+  // Get user list
   const { data: users } = usersApi.useApiQuery();
 
-  // 获取特定用户
+  // Get specific user
   const { data: user } = usersApi.useApiQuery('/123');
 
-  // 创建用户
+  // Create user
   const { trigger: createUser } = usersApi.useApiMutation('/create');
 
-  // 提交表单
+  // Submit form
   const handleSubmit = (userData: Partial<User>) => {
     createUser({ body: userData });
   };
@@ -80,37 +80,37 @@ function UserComponent() {
 ```tsx
 import { createServerApi, createCachedQuery, invalidateData } from '~/lib/http';
 
-// 创建服务端API客户端
+// Create server API client
 const serverApi = createServerApi();
 const usersApi = serverApi.createResourceApi<User>('/users');
 
-// 创建缓存查询
+// Create cached query
 const getUsersQuery = createCachedQuery(() => usersApi.get(), {
   key: ['users-list'],
   tags: ['users'],
-  revalidate: 3600, // 1小时缓存
+  revalidate: 3600, // 1 hour cache
 });
 
-// 在服务器组件中使用
+// Use in server component
 export async function UsersServerComponent() {
-  // 获取用户列表（带缓存）
+  // Get user list (with cache)
   const users = await getUsersQuery();
 
-  // 渲染UI
+  // Render UI
 }
 
-// 在Server Action中使用
+// Use in Server Action
 export async function createUser(formData: FormData) {
   'use server';
 
   try {
-    // 创建用户
+    // Create user
     await usersApi.post('/create', {
       name: formData.get('name'),
       email: formData.get('email'),
     });
 
-    // 重新验证数据
+    // Revalidate data
     invalidateData('users');
 
     return { success: true };
