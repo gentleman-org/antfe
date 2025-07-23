@@ -4,6 +4,7 @@ import '~/styles/globals.css';
 import { Toaster } from '~/components/ui/sonner';
 import { ThemeProvider } from '~/components/provider/themeProvider';
 import { SWRProvider } from '~/components/provider/swrProvider';
+import Script from 'next/script';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -82,6 +83,18 @@ export default async function LocaleLayout({
             <Toaster />
           </SWRProvider>
         </ThemeProvider>
+        <Script async src="https://www.googletagmanager.com/gtag/js?id=G-NZ3Q906J1Z" />
+        <Script
+          id="gtag-init"
+          dangerouslySetInnerHTML={{
+            __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-NZ3Q906J1Z');
+          `,
+          }}
+        />
       </body>
     </html>
   );
