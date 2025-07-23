@@ -54,15 +54,24 @@ export default function sitemap(): MetadataRoute.Sitemap {
 type Href = Parameters<typeof getPathname>[0]['href'];
 
 function getEntries(href: Href): MetadataRoute.Sitemap {
-  return routing.locales.map((locale) => ({
-    url: getUrl(href, locale),
-    lastModified: new Date(),
-    changeFrequency: 'daily' as const,
-    priority: href === '/' ? 1.0 : 0.8,
-    alternates: {
-      languages: Object.fromEntries(routing.locales.map((cur) => [cur, getUrl(href, cur)])),
-    },
-  }));
+  return routing.locales.map((locale) => {
+    const url = getUrl(href, locale);
+    const entry: MetadataRoute.Sitemap[0] = {
+      url,
+      lastModified: new Date(),
+      changeFrequency: 'daily',
+      priority: href === '/' ? 1.0 : 0.8,
+    };
+
+    // 只有在有多个语言时才添加 alternates
+    if (routing.locales.length > 1) {
+      entry.alternates = {
+        languages: Object.fromEntries(routing.locales.map((cur) => [cur, getUrl(href, cur)])),
+      };
+    }
+
+    return entry;
+  });
 }
 
 function getUrl(href: Href, locale: Locale): string {
