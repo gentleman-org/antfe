@@ -39,6 +39,33 @@
       "openSourceProject": "Open Source Project"
     }
   },
+  "discordPage": {
+    "title": "Discord Community",
+    "description": "Join our Discord server to chat with developers worldwide in real-time",
+    "welcome": "Welcome to AntFE Discord Community",
+    "subtitle": "Chat with developers worldwide in real-time and share technical experiences",
+    "joinButton": "Join Discord Server",
+    "features": {
+      "realtime": {
+        "title": "Real-time Chat",
+        "description": "Engage in real-time text and voice conversations with community members"
+      },
+      "channels": {
+        "title": "Professional Channels",
+        "description": "Specialized discussion channels organized by tech stack and topics"
+      },
+      "events": {
+        "title": "Community Events",
+        "description": "Regular tech sharing sessions and programming challenges"
+      },
+      "support": {
+        "title": "Technical Support",
+        "description": "Get technical questions answered by community experts"
+      }
+    },
+    "onlineMembers": "Online Members",
+    "totalMembers": "Total Members"
+  },
   "layout": {
     "title": "AntFE Developer Community",
     "shortTitle": "AntFE",

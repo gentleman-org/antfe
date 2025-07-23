@@ -1,0 +1,200 @@
+---
+title: 'MDX 示例页面'
+description: '展示 MDX 功能和组件的完整示例'
+author: 'AntFE Community'
+date: '2024-01-01'
+tags: ['mdx', 'markdown', 'react', 'demo']
+---
+
+# 欢迎来到 MDX 示例页面
+
+这是一个完全使用 **MDX** 编写的页面，展示了如何在 Markdown 中无缝使用 React 组件。
+
+<Callout type="info">这是一个信息提示框！MDX 让你可以在 Markdown 中直接使用 React 组件。</Callout>
+
+## 基础功能展示
+
+### 文本格式
+
+这是一段普通的文本，支持 **粗体**、_斜体_、~~删除线~~ 和 `内联代码`。
+
+### 列表
+
+#### 无序列表
+
+- React 组件
+- TypeScript 支持
+- Tailwind CSS 样式
+- Next.js 优化
+
+#### 有序列表
+
+1. 安装依赖
+2. 配置 MDX
+3. 创建页面
+4. 开始编写
+
+### 链接
+
+- [内部链接示例](/)
+- [外部链接示例](https://github.com/gentleman-org/antfe)
+- [邮箱链接](mailto:hello@example.com)
+
+## React 组件展示
+
+### 提示框组件
+
+<Callout type="success">成功提示：配置完成！</Callout>
+
+<Callout type="warning">警告提示：请注意这个重要信息。</Callout>
+
+<Callout type="error">错误提示：出现了一些问题。</Callout>
+
+### 卡片组件
+
+<Card>
+  <CardHeader>
+    <CardTitle>我的技能栈</CardTitle>
+  </CardHeader>
+  <CardContent>
+    <div className="flex flex-wrap gap-2">
+      <Badge>React</Badge>
+      <Badge>TypeScript</Badge>
+      <Badge>Next.js</Badge>
+      <Badge>Tailwind CSS</Badge>
+      <Badge>MDX</Badge>
+    </div>
+  </CardContent>
+</Card>
+
+### 社交链接
+
+<SocialLinks github="https://github.com/gentleman-org/antfe" twitter="https://twitter.com/example" linkedin="https://linkedin.com/in/example" email="hello@example.com" />
+
+### 按钮组件
+
+<div className="my-6 flex gap-4">
+  <Button>默认按钮</Button>
+  <Button variant="outline">轮廓按钮</Button>
+  <Button variant="secondary">次要按钮</Button>
+</div>
+
+### 对话框组件
+
+<Dialog>
+  <DialogTrigger asChild>
+    <Button variant="outline">打开对话框</Button>
+  </DialogTrigger>
+  <DialogContent>
+    <DialogHeader>
+      <DialogTitle>MDX 对话框示例</DialogTitle>
+      <DialogDescription>这是一个在 MDX 中使用的对话框组件示例。</DialogDescription>
+    </DialogHeader>
+    <p>这里是对话框的内容。</p>
+  </DialogContent>
+</Dialog>
+
+### 折叠面板
+
+<Accordion type="single" collapsible className="w-full">
+  <AccordionItem value="item-1">
+    <AccordionTrigger>什么是 MDX？</AccordionTrigger>
+    <AccordionContent>MDX 是一种允许你在 Markdown 文档中编写 JSX 的格式。它结合了 Markdown 的简洁性和 React 组件的强大功能。</AccordionContent>
+  </AccordionItem>
+  <AccordionItem value="item-2">
+    <AccordionTrigger>为什么使用 MDX？</AccordionTrigger>
+    <AccordionContent>MDX 让你可以在内容中嵌入交互式组件，创建更丰富的用户体验，同时保持内容的可读性和可维护性。</AccordionContent>
+  </AccordionItem>
+  <AccordionItem value="item-3">
+    <AccordionTrigger>如何开始使用？</AccordionTrigger>
+    <AccordionContent>按照本项目的配置，你可以直接创建 .mdx 文件，并在其中使用任何预配置的组件。</AccordionContent>
+  </AccordionItem>
+</Accordion>
+
+## 代码展示
+
+### 内联代码
+
+使用 `useState` Hook 来管理组件状态。
+
+### 代码块
+
+```typescript
+import { useState } from 'react';
+
+interface CounterProps {
+  initialValue?: number;
+}
+
+export function Counter({ initialValue = 0 }: CounterProps) {
+  const [count, setCount] = useState(initialValue);
+
+  return (
+    <div className="flex items-center gap-4">
+      <button
+        onClick={() => setCount(count - 1)}
+        className="px-4 py-2 bg-red-500 text-white rounded"
+      >
+        -
+      </button>
+      <span className="text-2xl font-bold">{count}</span>
+      <button
+        onClick={() => setCount(count + 1)}
+        className="px-4 py-2 bg-green-500 text-white rounded"
+      >
+        +
+      </button>
+    </div>
+  );
+}
+```
+
+## 引用块
+
+> MDX 是内容创作的未来。它让开发者能够创建真正交互式的文档和博客文章。
+>
+> — **MDX 社区**
+
+## 图片
+
+![AntFE Logo](/logo.png)
+
+## 表格
+
+| 特性       | Markdown | MDX |
+| ---------- | -------- | --- |
+| 简单文本   | ✅       | ✅  |
+| 代码高亮   | ✅       | ✅  |
+| React 组件 | ❌       | ✅  |
+| 交互性     | ❌       | ✅  |
+| 类型安全   | ❌       | ✅  |
+
+## 高级用法
+
+### 条件渲染
+
+<Card>
+  <CardHeader>
+    <CardTitle>开发环境检测</CardTitle>
+  </CardHeader>
+  <CardContent>{process.env.NODE_ENV === 'development' ? <Badge variant="outline">开发模式</Badge> : <Badge>生产模式</Badge>}</CardContent>
+</Card>
+
+### 动态内容
+
+<Card>
+  <CardHeader>
+    <CardTitle>当前时间</CardTitle>
+  </CardHeader>
+  <CardContent>
+    <p>页面生成时间：{new Date().toLocaleString('zh-CN')}</p>
+  </CardContent>
+</Card>
+
+## 总结
+
+<Callout type="success">
+  恭喜！你已经了解了 MDX 的强大功能。现在你可以： 1. 在 Markdown 中使用 React 组件 2. 创建交互式内容 3. 保持内容的可读性 4. 享受 TypeScript 的类型安全
+</Callout>
+
+现在你可以开始创建自己的 MDX 页面了！在 `app/(me)/your-username/` 目录下创建 `page.mdx` 文件，开始你的创作之旅。

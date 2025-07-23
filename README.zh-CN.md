@@ -217,7 +217,7 @@ npm run log               # 基于 Git 提交生成 CHANGELOG
 
 ### 社区资源
 
-- [Discord 群组](https://dc.antfe.com)
+- [Discord 群组](https://antfe.com/dc)
 - [技术讨论](https://github.com/gentleman-org/antfe/discussions)
 
 ---

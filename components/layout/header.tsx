@@ -26,7 +26,7 @@ export default function Header() {
 
   const navigation = [
     { name: t('header.navigation.home'), href: '/' },
-    { name: t('header.navigation.community'), href: 'https://dc.antfe.com' },
+    { name: t('header.navigation.community'), href: '/discord' },
     // { name: t('header.navigation.articles'), href: '/articles' },
     { name: t('header.navigation.projects'), href: '/projects' },
     { name: t('header.navigation.developers'), href: '/developers' },

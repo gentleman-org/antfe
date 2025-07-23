@@ -39,6 +39,33 @@
       "openSourceProject": "开源项目"
     }
   },
+  "discordPage": {
+    "title": "Discord 社区",
+    "description": "加入我们的 Discord 服务器，与全球开发者实时交流",
+    "welcome": "欢迎来到 AntFE Discord 社区",
+    "subtitle": "与全球开发者实时交流，分享技术经验",
+    "joinButton": "加入 Discord 服务器",
+    "features": {
+      "realtime": {
+        "title": "实时交流",
+        "description": "与社区成员进行实时文字和语音交流"
+      },
+      "channels": {
+        "title": "专业频道",
+        "description": "按技术栈和话题分类的专业讨论频道"
+      },
+      "events": {
+        "title": "社区活动",
+        "description": "定期举办技术分享会和编程挑战"
+      },
+      "support": {
+        "title": "技术支持",
+        "description": "获得社区专家的技术问题解答"
+      }
+    },
+    "onlineMembers": "在线成员",
+    "totalMembers": "总成员数"
+  },
   "layout": {
     "title": "AntFE 程序员社区",
     "shortTitle": "AntFE",

@@ -42,7 +42,7 @@ export default function Footer() {
         { name: t('footer.community.discussions'), href: 'https://github.com/gentleman-org/antfe/discussions', external: true },
         { name: t('footer.community.issues'), href: 'https://github.com/gentleman-org/antfe/issues', external: true },
         { name: t('footer.community.contributing'), href: 'https://github.com/gentleman-org/antfe/blob/main/CONTRIBUTING.md', external: true },
-        { name: t('footer.community.discord'), href: 'https://dc.antfe.com', external: true },
+        { name: t('footer.community.discord'), href: '/discord', external: true },
       ],
     },
     {

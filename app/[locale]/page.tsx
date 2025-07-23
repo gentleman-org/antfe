@@ -81,7 +81,7 @@ export default function Home() {
               {/* CTA buttons */}
               <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
                 <Button size="lg" className="group liquid-glass-button-primary" asChild>
-                  <Link href="https://dc.antfe.com">
+                  <Link href="/discord">
                     <span className="flex items-center space-x-2">
                       <span>{t('getStarted')}</span>
                       <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
@@ -166,7 +166,7 @@ export default function Home() {
 
               <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
                 <Button size="lg" className="group liquid-glass-button-primary" asChild>
-                  <Link href="https://dc.antfe.com">
+                  <Link href="/discord">
                     <span className="flex items-center space-x-2">
                       <Rocket className="h-4 w-4 transition-transform duration-300 group-hover:rotate-12" />
                       <span>{t('cta.joinCommunity')}</span>

@@ -217,7 +217,7 @@ We welcome all forms of contributions!
 
 ### Community Resources
 
-- [Discord Group](https://dc.antfe.com)
+- [Discord Group](https://antfe.com/dc)
 - [Technical Discussions](https://github.com/gentleman-org/antfe/discussions)
 
 ---

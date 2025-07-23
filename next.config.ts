@@ -1,6 +1,7 @@
 import type { NextConfig } from 'next';
 import withSerwistInit from '@serwist/next';
 import createNextIntlPlugin from 'next-intl/plugin';
+import createMDX from '@next/mdx';
 
 const revision = crypto.randomUUID();
 
@@ -14,9 +15,19 @@ const withSerwist = withSerwistInit({
 
 const withNextIntl = createNextIntlPlugin('./lib/i18n/request.ts');
 
+// 配置 MDX
+const withMDX = createMDX({
+  options: {
+    remarkPlugins: [],
+    rehypePlugins: [],
+  },
+});
+
 const nextConfig: NextConfig = {
   /* config options here */
   reactStrictMode: true,
+  // 支持 .mdx 文件扩展名
+  pageExtensions: ['js', 'jsx', 'mdx', 'ts', 'tsx'],
   // experimental features
   experimental: {
     // enable progressive page rendering (PPR) - requires canary version
@@ -78,4 +89,4 @@ const nextConfig: NextConfig = {
   ],
 };
 
-export default withSerwist(withNextIntl(nextConfig));
+export default withSerwist(withNextIntl(withMDX(nextConfig)));
