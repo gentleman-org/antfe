@@ -3,9 +3,10 @@ import { getProjects, getProjectStats } from '~/lib/projects';
 import PageLayout from '~/components/layout/pageLayout';
 import ProjectsClient from './ProjectsClient';
 
-export default async function ProjectsPage({ params }: { params: { locale: string } }) {
+export default async function ProjectsPage({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
   const t = await getTranslations('projectsPage');
-  const projects = await getProjects(params.locale);
+  const projects = await getProjects(locale);
   const statistics = getProjectStats(projects);
 
   return (

@@ -4,7 +4,7 @@ import { useState, useMemo } from 'react';
 import { useTranslations } from 'next-intl';
 import { Button } from '~/components/ui/button';
 import { Input } from '~/components/ui/input';
-import { Search, ExternalLink, AlertCircle, Filter, Code, Smartphone, Monitor, Package, Wrench, Eye, Calendar, Star } from 'lucide-react';
+import { Search, ExternalLink, AlertCircle, Filter, Code, Smartphone, Monitor, Package, Wrench } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { type Project, filterProjects } from '~/lib/projects';
@@ -28,7 +28,7 @@ export default function ProjectsClient({ projects }: ProjectsClientProps) {
   const t = useTranslations('projectsPage');
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedCategory, setSelectedCategory] = useState<string>('all');
-  const [selectedStatus, setSelectedStatus] = useState<string>('all');
+  const [selectedStatus] = useState<string>('all');
 
   const filteredProjects = useMemo(() => {
     return filterProjects(projects, searchQuery, selectedCategory, selectedStatus);
