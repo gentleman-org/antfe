@@ -102,7 +102,7 @@
     "category": ["web", "open source"],
     "status": "active",
     "technologies": ["Next.js", "React", "TypeScript", "Tailwind CSS"],
-    "github": "hhttps://github.com/vadxq/nextjs-ai-starter",
+    "github": "https://github.com/vadxq/nextjs-ai-starter",
     "website": "https://nextjs-ai-starter.vadxq.com",
     "download": ""
   },
