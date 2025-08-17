@@ -1,0 +1,121 @@
+[
+  {
+    "id": 1,
+    "name": "AntFE Website",
+    "cover": "https://antfe.com/screenshots/desktop-wide.png",
+    "description": "The official website for AntFE developer community, built with Next.js and modern web technologies.",
+    "category": ["web", "open source"],
+    "status": "active",
+    "technologies": ["Next.js", "React", "TypeScript", "Tailwind CSS", "Framer Motion"],
+    "github": "https://github.com/gentleman-org/antfe",
+    "website": "https://antfe.com"
+  },
+  {
+    "id": 2,
+    "name": "Notepaste",
+    "cover": "",
+    "description": "A desktop application for quickly copying and pasting code snippets/text fragments.",
+    "category": ["desktop", "open source"],
+    "status": "active",
+    "technologies": ["Electron", "JavaScript", "HTML", "CSS"],
+    "github": "https://github.com/seemrcola/notepaste",
+    "website": "",
+    "download": "https://github.com/seemrcola/notepaste/releases"
+  },
+  {
+    "id": 3,
+    "name": "sc_windows",
+    "cover": "",
+    "description": "A screenshot tool with rich features, including screenshot, annotation, OCR text recognition, etc.",
+    "category": ["desktop", "open source"],
+    "status": "active",
+    "technologies": ["rust"],
+    "github": "https://github.com/han1548772930/sc_windows",
+    "website": "",
+    "download": "https://github.com/han1548772930/sc_windows/releases"
+  },
+  {
+    "id": 4,
+    "name": "time-management",
+    "cover": "",
+    "description": "A time management application based on Vue3, implementing the Eisenhower Quadrant principle to help you better manage your time and task priorities.",
+    "category": ["web", "open source"],
+    "status": "active",
+    "technologies": ["Vue3", "TypeScript", "Tailwind CSS", "Framer Motion"],
+    "github": "https://github.com/gentleman-org/time-management",
+    "website": "https://time-management.antfe.com",
+    "download": ""
+  },
+  {
+    "id": 5,
+    "name": "my-next-note",
+    "cover": "",
+    "description": "A learning log about nextjs, if you are interested in nextjs, welcome to take a look.",
+    "category": ["web", "open source"],
+    "status": "active",
+    "technologies": ["Next.js", "React", "TypeScript", "Tailwind CSS", "Framer Motion"],
+    "github": "https://github.com/Chiaki-xps/my-next-note",
+    "website": "",
+    "download": ""
+  },
+  {
+    "id": 6,
+    "name": "keep-alive-iframe",
+    "cover": "",
+    "description": "A keep-alive iframe rendering component.",
+    "category": ["web", "open source"],
+    "status": "active",
+    "technologies": ["Next.js", "React", "TypeScript", "Tailwind CSS", "Framer Motion"],
+    "github": "https://github.com/gentleman-org/keep-alive-iframe",
+    "website": "https://keepaliveiframe.netlify.app",
+    "download": ""
+  },
+  {
+    "id": 7,
+    "name": "oi",
+    "cover": "",
+    "description": "A project that aggregates tabs and bookmarks from browsers using crxjs.",
+    "category": ["web", "open source"],
+    "status": "active",
+    "technologies": ["Next.js", "React", "TypeScript", "Tailwind CSS", "Framer Motion"],
+    "github": "https://github.com/seemrcola/oi",
+    "website": "",
+    "download": ""
+  },
+  {
+    "id": 8,
+    "name": "bot-server",
+    "cover": "",
+    "description": "A simple agent (using mcp protocol for tool interaction and langchainjs for llm interaction) that supports conversation and tool calls. Developed using express + langchain.",
+    "category": ["web", "open source"],
+    "status": "active",
+    "technologies": ["Next.js", "React", "TypeScript", "Tailwind CSS", "Framer Motion"],
+    "github": "https://github.com/seemrcola/bot-server",
+    "website": "",
+    "download": ""
+  },
+  {
+    "id": 9,
+    "name": "nextjs-ai-starter",
+    "cover": "",
+    "description": "About Nextjs v15 + React v19 && Tailwind v4 && AI.",
+    "category": ["web", "open source"],
+    "status": "active",
+    "technologies": ["Next.js", "React", "TypeScript", "Tailwind CSS"],
+    "github": "hhttps://github.com/vadxq/nextjs-ai-starter",
+    "website": "https://nextjs-ai-starter.vadxq.com",
+    "download": ""
+  },
+  {
+    "id": 10,
+    "name": "go-rest-starter",
+    "cover": "",
+    "description": "Golang restful api starter with std lib net/http, go-chi, gorm, postgres, redis",
+    "category": ["backend", "open source"],
+    "status": "active",
+    "technologies": ["Go", "go-chi", "Gorm", "JWT", "Swagger", "Redis", "Postgres", "Docker"],
+    "github": "https://github.com/vadxq/go-rest-starter",
+    "website": "",
+    "download": ""
+  }
+]

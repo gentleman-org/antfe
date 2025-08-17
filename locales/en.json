@@ -191,5 +191,108 @@
     "light": "Light",
     "dark": "Dark",
     "system": "System"
+  },
+  "projectsPage": {
+    "title": "Open Source Projects",
+    "subtitle": "Discover Amazing Projects Built by Our Community",
+    "description": "Explore innovative open source projects created by developers in our community. From web applications to developer tools, find inspiration and contribute to the future of technology.",
+    "searchPlaceholder": "Search projects...",
+    "filterAll": "All Projects",
+    "filterWeb": "Web Apps",
+    "filterMobile": "Mobile Apps",
+    "filterDesktop": "Desktop Apps",
+    "filterLibrary": "Libraries",
+    "filterTool": "Tools",
+    "statusActive": "Active",
+    "statusMaintenance": "Maintenance",
+    "statusArchived": "Archived",
+    "viewProject": "View Project",
+    "viewDemo": "Live Demo",
+    "viewSource": "Source Code",
+    "visitWebsite": "Visit Website",
+    "viewSourceCode": "View Source Code",
+    "sourceCode": "Source",
+    "download": "Download",
+    "downloadProject": "Download Project",
+    "filterBackend": "Backend",
+    "contributors": "Contributors",
+    "lastUpdated": "Updated",
+    "createdAt": "Created",
+    "statistics": {
+      "totalProjects": "Total Projects",
+      "activeProjects": "Active Projects",
+      "totalContributors": "Contributors",
+      "totalStars": "Total Stars"
+    },
+    "noResults": "No projects found matching your criteria.",
+    "tryDifferentSearch": "Try adjusting your search or filters."
+  },
+  "developerProfile": {
+    "backToList": "Back to Developers",
+    "about": "About",
+    "skills": "Skills",
+    "projects": "Projects",
+    "contributions": "Contributions",
+    "joinedAt": "Joined",
+    "recentProjects": "Recent Projects",
+    "projectsComingSoon": "Projects will be displayed here soon...",
+    "getInTouch": "Get in Touch",
+    "experienceLevel": {
+      "junior": "Junior Developer",
+      "mid": "Mid-level Developer",
+      "senior": "Senior Developer",
+      "lead": "Lead Developer"
+    }
+  },
+  "developersPage": {
+    "title": "Community Developers",
+    "subtitle": "Meet the Talented Developers in Our Community",
+    "description": "Connect with skilled developers from around the world. Discover their expertise, explore their projects, and collaborate on exciting new ventures.",
+    "communityBadge": "Developer Community",
+    "searchPlaceholder": "Search developers...",
+    "filterAll": "All Developers",
+    "filterJunior": "Junior",
+    "filterMid": "Mid-level",
+    "filterSenior": "Senior",
+    "filterLead": "Lead",
+    "viewProfile": "View Profile",
+    "projects": "Projects",
+    "contributions": "Contributions",
+    "joinedAt": "Joined",
+    "location": "Location",
+    "skills": "Skills",
+    "experience": "Experience",
+    "skillTooltip": "Skilled in",
+    "otherSkills": "Other skills",
+    "visit": "Visit",
+    "subscribe": "Subscribe to",
+    "features": {
+      "discover": {
+        "title": "Discover Talent",
+        "description": "Explore profiles of skilled developers, discover their specialties, and find the perfect collaborators for your next project."
+      },
+      "connect": {
+        "title": "Build Networks",
+        "description": "Connect with like-minded developers, share experiences, and build lasting professional relationships across the globe."
+      },
+      "collaborate": {
+        "title": "Create Together",
+        "description": "Join forces on innovative projects, contribute to open source initiatives, and bring your ideas to life with the community."
+      }
+    },
+    "statistics": {
+      "totalDevelopers": "Total Developers",
+      "activeDevelopers": "Active This Month",
+      "totalProjects": "Community Projects",
+      "totalContributions": "Total Contributions"
+    },
+    "noResults": "No developers found matching your criteria.",
+    "tryDifferentSearch": "Try adjusting your search or filters.",
+    "experienceLevel": {
+      "junior": "Junior Developer",
+      "mid": "Mid-level Developer",
+      "senior": "Senior Developer",
+      "lead": "Lead Developer"
+    }
   }
 }

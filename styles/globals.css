@@ -499,6 +499,82 @@ html {
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
 }
 
+/* Gradient text animation */
+.gradient-text-animated {
+  background: linear-gradient(45deg, #3b82f6, #8b5cf6, #ec4899, #3b82f6);
+  background-size: 300% 300%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientShift 6s ease-in-out infinite;
+}
+
+@keyframes gradientShift {
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+/* Float animation for cards */
+.float-animation {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Liquid glow effect */
+.liquid-glow {
+  position: relative;
+}
+
+.liquid-glow::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: inherit;
+  filter: blur(20px);
+  opacity: 0.3;
+  z-index: -1;
+  transition: opacity 0.3s ease;
+}
+
+.liquid-glow:hover::before {
+  opacity: 0.6;
+}
+
+/* Grid background */
+.grid-background {
+  background-image: linear-gradient(rgba(59, 130, 246, 0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(59, 130, 246, 0.1) 1px, transparent 1px);
+  background-size: 50px 50px;
+  animation: gridMove 20s linear infinite;
+}
+
+@keyframes gridMove {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(50px, 50px);
+  }
+}
+
+.dark .grid-background {
+  background-image: linear-gradient(rgba(59, 130, 246, 0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(59, 130, 246, 0.05) 1px, transparent 1px);
+}
+
 .dark .glass-morphism {
   background: rgba(0, 0, 0, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.1);

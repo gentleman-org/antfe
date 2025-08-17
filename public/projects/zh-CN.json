@@ -1,0 +1,121 @@
+[
+  {
+    "id": 1,
+    "name": "AntFE 官方网站",
+    "cover": "https://antfe.com/screenshots/desktop-wide.png",
+    "description": "AntFE 开发者社区的官方网站，使用 Next.js 和现代 Web 技术构建。",
+    "category": ["web", "open源"],
+    "status": "active",
+    "technologies": ["Next.js", "React", "TypeScript", "Tailwind CSS", "Framer Motion"],
+    "github": "https://github.com/gentleman-org/antfe",
+    "website": "https://antfe.com"
+  },
+  {
+    "id": 2,
+    "name": "Notepaste",
+    "cover": "",
+    "description": "快速复制粘贴代码片段和文本片段的桌面应用程序。",
+    "category": ["desktop", "开源"],
+    "status": "active",
+    "technologies": ["Electron", "JavaScript", "HTML", "CSS"],
+    "github": "https://github.com/seemrcola/notepaste",
+    "website": "",
+    "download": "https://github.com/seemrcola/notepaste/releases"
+  },
+  {
+    "id": 3,
+    "name": "SC Windows 截图工具",
+    "cover": "",
+    "description": "功能丰富的截图工具，包括截图、标注、OCR 文字识别等。",
+    "category": ["desktop", "开源"],
+    "status": "active",
+    "technologies": ["Rust"],
+    "github": "https://github.com/han1548772930/sc_windows",
+    "website": "",
+    "download": "https://github.com/han1548772930/sc_windows/releases"
+  },
+  {
+    "id": 4,
+    "name": "时间管理应用",
+    "cover": "",
+    "description": "基于 Vue3 的时间管理应用，实现艾森豪威尔矩阵原理，帮助您更好地管理时间和任务优先级。",
+    "category": ["web", "开源"],
+    "status": "active",
+    "technologies": ["Vue3", "TypeScript", "Tailwind CSS", "Framer Motion"],
+    "github": "https://github.com/gentleman-org/time-management",
+    "website": "https://time-management.antfe.com",
+    "download": ""
+  },
+  {
+    "id": 5,
+    "name": "Next.js 学习笔记",
+    "cover": "",
+    "description": "关于 Next.js 的学习日志，如果您对 Next.js 感兴趣，欢迎查看。",
+    "category": ["web", "开源"],
+    "status": "active",
+    "technologies": ["Next.js", "React", "TypeScript", "Tailwind CSS", "Framer Motion"],
+    "github": "https://github.com/Chiaki-xps/my-next-note",
+    "website": "",
+    "download": ""
+  },
+  {
+    "id": 6,
+    "name": "Keep Alive Iframe",
+    "cover": "",
+    "description": "一个保持活跃状态的 iframe 渲染组件。",
+    "category": ["web", "开源"],
+    "status": "active",
+    "technologies": ["Next.js", "React", "TypeScript", "Tailwind CSS", "Framer Motion"],
+    "github": "https://github.com/gentleman-org/keep-alive-iframe",
+    "website": "https://keepaliveiframe.netlify.app",
+    "download": ""
+  },
+  {
+    "id": 7,
+    "name": "OI 浏览器聚合工具",
+    "cover": "",
+    "description": "一个使用 crxjs 聚合浏览器标签页和书签的项目。",
+    "category": ["web", "开源"],
+    "status": "active",
+    "technologies": ["Next.js", "React", "TypeScript", "Tailwind CSS", "Framer Motion"],
+    "github": "https://github.com/seemrcola/oi",
+    "website": "",
+    "download": ""
+  },
+  {
+    "id": 8,
+    "name": "Bot Server",
+    "cover": "",
+    "description": "一个简单的智能体（使用 MCP 协议进行工具交互，使用 LangChain.js 进行 LLM 交互），支持对话和工具调用。使用 Express + LangChain 开发。",
+    "category": ["web", "开源"],
+    "status": "active",
+    "technologies": ["Next.js", "React", "TypeScript", "Tailwind CSS", "Framer Motion"],
+    "github": "https://github.com/seemrcola/bot-server",
+    "website": "",
+    "download": ""
+  },
+  {
+    "id": 9,
+    "name": "nextjs-ai-starter",
+    "cover": "",
+    "description": "关于 Next.js v15 + React v19 && Tailwind v4 && AI 的项目。",
+    "category": ["web", "开源"],
+    "status": "active",
+    "technologies": ["Next.js", "React", "TypeScript", "Tailwind CSS"],
+    "github": "https://github.com/vadxq/nextjs-ai-starter",
+    "website": "https://nextjs-ai-starter.vadxq.com",
+    "download": ""
+  },
+  {
+    "id": 10,
+    "name": "go-rest-starter",
+    "cover": "",
+    "description": "使用标准库 net/http、go-chi、gorm、postgres、redis 的 Golang RESTful API 启动器。",
+    "category": ["backend", "开源"],
+    "status": "active",
+    "technologies": ["Go", "go-chi", "Gorm", "JWT", "Swagger", "Redis", "Postgres", "Docker"],
+    "github": "https://github.com/vadxq/go-rest-starter",
+    "website": "",
+    "download": ""
+  }
+]

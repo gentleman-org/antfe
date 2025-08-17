@@ -191,5 +191,108 @@
     "light": "浅色",
     "dark": "深色",
     "system": "系统"
+  },
+  "projectsPage": {
+    "title": "开源项目",
+    "subtitle": "发现社区开发者构建的精彩项目",
+    "description": "探索我们社区开发者创建的创新开源项目。从网络应用到开发工具，寻找灵感并为技术的未来做出贡献。",
+    "searchPlaceholder": "搜索项目...",
+    "filterAll": "所有项目",
+    "filterWeb": "网页应用",
+    "filterMobile": "移动应用",
+    "filterDesktop": "桌面应用",
+    "filterLibrary": "库",
+    "filterTool": "工具",
+    "statusActive": "活跃",
+    "statusMaintenance": "维护中",
+    "statusArchived": "已归档",
+    "viewProject": "查看项目",
+    "viewDemo": "在线演示",
+    "viewSource": "源代码",
+    "visitWebsite": "访问网站",
+    "viewSourceCode": "查看源码",
+    "sourceCode": "源码",
+    "download": "下载",
+    "downloadProject": "下载项目",
+    "filterBackend": "后端",
+    "contributors": "贡献者",
+    "lastUpdated": "更新于",
+    "createdAt": "创建于",
+    "statistics": {
+      "totalProjects": "项目总数",
+      "activeProjects": "活跃项目",
+      "totalContributors": "贡献者",
+      "totalStars": "总星标数"
+    },
+    "noResults": "未找到符合条件的项目。",
+    "tryDifferentSearch": "请尝试调整搜索条件或筛选器。"
+  },
+  "developerProfile": {
+    "backToList": "返回开发者列表",
+    "about": "关于",
+    "skills": "技能",
+    "projects": "项目",
+    "contributions": "贡献",
+    "joinedAt": "加入时间",
+    "recentProjects": "最近项目",
+    "projectsComingSoon": "项目即将展示...",
+    "getInTouch": "联系方式",
+    "experienceLevel": {
+      "junior": "初级开发者",
+      "mid": "中级开发者",
+      "senior": "高级开发者",
+      "lead": "技术负责人"
+    }
+  },
+  "developersPage": {
+    "title": "社区开发者",
+    "subtitle": "认识我们社区中的优秀开发者",
+    "description": "与来自世界各地的技能娴熟的开发者建立联系。了解他们的专业技能，探索他们的项目，并在令人兴奋的新项目上进行合作。",
+    "communityBadge": "开发者社区",
+    "searchPlaceholder": "搜索开发者...",
+    "filterAll": "所有开发者",
+    "filterJunior": "初级",
+    "filterMid": "中级",
+    "filterSenior": "高级",
+    "filterLead": "技术负责人",
+    "viewProfile": "查看资料",
+    "projects": "项目",
+    "contributions": "贡献",
+    "joinedAt": "加入于",
+    "location": "位置",
+    "skills": "技能",
+    "experience": "经验",
+    "skillTooltip": "擅长",
+    "otherSkills": "其他技能",
+    "visit": "访问",
+    "subscribe": "订阅",
+    "features": {
+      "discover": {
+        "title": "发现人才",
+        "description": "探索技能娴熟的开发者档案，了解他们的专业特长，为您的下一个项目找到完美的合作伙伴。"
+      },
+      "connect": {
+        "title": "建立联系",
+        "description": "与志同道合的开发者建立联系，分享经验，在全球范围内建立持久的专业关系。"
+      },
+      "collaborate": {
+        "title": "协作创新",
+        "description": "在创新项目上携手合作，为开源项目做出贡献，与社区一起将您的想法变为现实。"
+      }
+    },
+    "statistics": {
+      "totalDevelopers": "开发者总数",
+      "activeDevelopers": "本月活跃",
+      "totalProjects": "社区项目",
+      "totalContributions": "总贡献数"
+    },
+    "noResults": "未找到符合条件的开发者。",
+    "tryDifferentSearch": "请尝试调整搜索条件或筛选器。",
+    "experienceLevel": {
+      "junior": "初级开发者",
+      "mid": "中级开发者",
+      "senior": "高级开发者",
+      "lead": "技术负责人"
+    }
   }
 }
