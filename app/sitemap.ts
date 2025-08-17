@@ -6,14 +6,27 @@ import fs from 'fs';
 import path from 'path';
 
 // 导入个人页面数据
-const meJsonPath = path.join(process.cwd(), 'me.json');
-let personalPages: Array<{ path: string }> = [];
+const personalPages: Array<{ path: string }> = [];
 
 try {
-  const meData = fs.readFileSync(meJsonPath, 'utf-8');
-  personalPages = JSON.parse(meData);
+  const meDir = path.join(process.cwd(), 'app/(me)');
+  const meDirs = fs
+    .readdirSync(meDir, { withFileTypes: true })
+    .filter((dirent) => dirent.isDirectory())
+    .map((dirent) => dirent.name);
+
+  meDirs.forEach((dirName) => {
+    const meJsonPath = path.join(meDir, dirName, 'me.json');
+    try {
+      if (fs.existsSync(meJsonPath)) {
+        personalPages.push({ path: dirName });
+      }
+    } catch (error) {
+      console.warn(`无法读取 ${dirName}/me.json:`, error);
+    }
+  });
 } catch (error) {
-  console.warn('无法读取 me.json:', error);
+  console.warn('无法读取个人页面目录:', error);
 }
 
 export default function sitemap(): MetadataRoute.Sitemap {

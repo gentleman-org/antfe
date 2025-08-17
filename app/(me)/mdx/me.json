@@ -1,0 +1,19 @@
+{
+  "name": "MDX Demo",
+  "avatar": "https://antfe.com/logo.png",
+  "bio": "Demonstrating MDX functionality with React components in Markdown",
+  "location": "Web",
+  "company": "AntFE",
+  "position": "Documentation",
+  "skills": ["MDX", "Markdown", "React", "Next.js", "TypeScript"],
+  "links": {
+    "github": "https://github.com/gentleman-org/antfe",
+    "website": "https://antfe.com"
+  },
+  "seo": {
+    "title": "MDX Demo - Interactive Markdown with React Components | AntFE",
+    "description": "Explore the power of MDX - write Markdown with embedded React components. Perfect for documentation, blogs, and interactive content.",
+    "keywords": "MDX, Markdown, React, Next.js, TypeScript, Interactive Documentation, AntFE"
+  },
+  "joinedAt": "2025-01-01"
+}

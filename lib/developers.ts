@@ -1,5 +1,6 @@
 import fs from 'fs';
 import path from 'path';
+import { Metadata } from 'next';
 
 export type Developer = {
   id?: string;
@@ -18,6 +19,11 @@ export type Developer = {
   };
   rss?: string;
   joinedAt?: string;
+  seo?: {
+    title?: string;
+    description?: string;
+    keywords?: string;
+  };
 
   // Legacy fields for backward compatibility
   title?: string;
@@ -104,4 +110,38 @@ export function getDeveloperIds(): string[] {
     console.error('Error getting developer IDs:', error);
     return [];
   }
+}
+
+export function generateDeveloperMetadata(developer: Developer, username: string): Metadata {
+  const baseUrl = 'https://antfe.com';
+  const defaultTitle = `${developer.name} - AntFE Developer`;
+  const defaultDescription = developer.bio || 'Developer profile on AntFE';
+  const skillsKeywords = developer.skills?.join(', ') || '';
+
+  return {
+    title: developer.seo?.title || defaultTitle,
+    description: developer.seo?.description || defaultDescription,
+    keywords: developer.seo?.keywords || `${developer.name}, developer, ${skillsKeywords}`,
+    openGraph: {
+      title: developer.seo?.title || defaultTitle,
+      description: developer.seo?.description || defaultDescription,
+      url: `${baseUrl}/${username}`,
+      siteName: 'AntFE',
+      images: [
+        {
+          url: developer.avatar,
+          width: 1200,
+          height: 630,
+          alt: developer.name,
+        },
+      ],
+      type: 'profile',
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: developer.seo?.title || defaultTitle,
+      description: developer.seo?.description || defaultDescription,
+      images: [developer.avatar],
+    },
+  };
 }

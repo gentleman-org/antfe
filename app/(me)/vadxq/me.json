@@ -11,5 +11,10 @@
     "website": "https://blog.vadxq.com"
   },
   "rss": "https://blog.vadxq.com/atom.xml",
+  "seo": {
+    "title": "Vadxq - Be a simple, low-key and romantic technical person.",
+    "description": "Be a simple, low-key and romantic technical person.",
+    "keywords": "vadxq"
+  },
   "joinedAt": "2025-08-08"
 }

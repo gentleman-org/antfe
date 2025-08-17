@@ -2,7 +2,8 @@ import { notFound } from 'next/navigation';
 import { Calendar, MapPin, Code, User, Github, Twitter, Linkedin, Globe, ArrowLeft, ExternalLink, Building2, Briefcase, Rss } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { getDeveloperByUsername } from '~/lib/developers';
+import { Metadata } from 'next';
+import { getDeveloperByUsername, generateDeveloperMetadata } from '~/lib/developers';
 import { Button } from '~/components/ui/button';
 
 const socialIcons = {
@@ -26,6 +27,19 @@ const experienceLevels = {
   senior: 'Senior Developer',
   lead: 'Lead Developer',
 };
+
+export async function generateMetadata(): Promise<Metadata> {
+  const developer = getDeveloperByUsername('vadxq');
+
+  if (!developer) {
+    return {
+      title: 'Developer Not Found - AntFE',
+      description: 'The requested developer profile could not be found.',
+    };
+  }
+
+  return generateDeveloperMetadata(developer, 'vadxq');
+}
 
 export default function VadxqPage() {
   const developer = getDeveloperByUsername('vadxq');
