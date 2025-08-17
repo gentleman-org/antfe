@@ -12,43 +12,55 @@ export type Project = {
 };
 
 export async function getProjects(locale: string = 'en'): Promise<Project[]> {
-  if (typeof window === 'undefined') {
-    // Server-side: use fs module
-    const fs = await import('fs');
-    const path = await import('path');
+  try {
+    // Use fetch for both server and client side for consistency
+    // This works better in deployment environments like Vercel
+    const baseUrl = typeof window === 'undefined' ? (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : 'http://localhost:3000') : '';
 
-    try {
-      const filePath = path.join(process.cwd(), 'public/projects', `${locale}.json`);
-      const fallbackPath = path.join(process.cwd(), 'public/projects', 'en.json');
+    const response = await fetch(`${baseUrl}/projects/${locale}.json`);
+    if (!response.ok) {
+      console.log(`Failed to fetch ${locale}.json, trying fallback to en.json`);
+      const fallbackResponse = await fetch(`${baseUrl}/projects/en.json`);
+      if (!fallbackResponse.ok) {
+        throw new Error('Failed to fetch projects data');
+      }
+      const projects = await fallbackResponse.json();
+      console.log(`Successfully loaded ${projects.length} projects (fallback)`);
+      return projects;
+    }
 
-      let data: string;
+    const projects = await response.json();
+    console.log(`Successfully loaded ${projects.length} projects for locale: ${locale}`);
+    return projects;
+  } catch (error) {
+    console.error('Error fetching projects:', error);
+
+    // Fallback to file system only in development
+    if (typeof window === 'undefined' && process.env.NODE_ENV === 'development') {
       try {
-        data = fs.readFileSync(filePath, 'utf8');
-      } catch {
-        data = fs.readFileSync(fallbackPath, 'utf8');
-      }
+        const fs = await import('fs');
+        const path = await import('path');
 
-      return JSON.parse(data);
-    } catch (error) {
-      console.error('Error reading projects data:', error);
-      return [];
-    }
-  } else {
-    // Client-side: use fetch
-    try {
-      const response = await fetch(`/projects/${locale}.json`);
-      if (!response.ok) {
-        const fallbackResponse = await fetch('/projects/en.json');
-        if (!fallbackResponse.ok) {
-          throw new Error('Failed to fetch projects data');
+        const publicPath = path.resolve(process.cwd(), 'public', 'projects');
+        const filePath = path.join(publicPath, `${locale}.json`);
+        const fallbackPath = path.join(publicPath, 'en.json');
+
+        let data: string;
+        if (fs.existsSync(filePath)) {
+          data = fs.readFileSync(filePath, 'utf8');
+        } else {
+          data = fs.readFileSync(fallbackPath, 'utf8');
         }
-        return await fallbackResponse.json();
+
+        const projects = JSON.parse(data);
+        console.log(`Successfully loaded ${projects.length} projects from filesystem`);
+        return projects;
+      } catch (fsError) {
+        console.error('File system fallback failed:', fsError);
       }
-      return await response.json();
-    } catch (error) {
-      console.error('Error fetching projects:', error);
-      return [];
     }
+
+    return [];
   }
 }
 
