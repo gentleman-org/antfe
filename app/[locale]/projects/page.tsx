@@ -2,6 +2,11 @@ import { getTranslations } from 'next-intl/server';
 import { getProjects, getProjectStats } from '~/lib/projects';
 import PageLayout from '~/components/layout/pageLayout';
 import ProjectsClient from './ProjectsClient';
+import { generateStaticParams as getI18nParams } from '~/lib/i18n/routing';
+
+export async function generateStaticParams() {
+  return getI18nParams();
+}
 
 export default async function ProjectsPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
