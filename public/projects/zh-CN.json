@@ -117,5 +117,17 @@
     "github": "https://github.com/vadxq/go-rest-starter",
     "website": "",
     "download": ""
+  },
+  {
+    "id": 11,
+    "name": "mock-h3",
+    "cover": "https://p3-xtjj-sign.byteimg.com/tos-cn-i-73owjymdk6/4678d4956efc437f9345d6587f26f682~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg5riF6aOO5LiN6Zeu54Of6Zuoeg==:q75.awebp?rk3s=f64ab15b&x-expires=1756190182&x-signature=t1KccKK9Q673SDSYl0ltTaOS0AA%3D",
+    "description": "基于 Vite + h3，实现了一款轻量、灵活的 Mock 插件 —— mock-h3",
+    "category": ["mock", "open source"],
+    "status": "active",
+    "technologies": ["Vite", "TypeScript"],
+    "github": "https://github.com/aibayanyu20/mock-h3",
+    "website": "https://juejin.cn/post/7539837953901723674",
+    "download": ""
   }
 ]
