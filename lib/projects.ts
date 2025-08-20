@@ -1,4 +1,4 @@
-export type Project = {
+export interface Project {
   id: number;
   name: string;
   cover: string;
@@ -9,7 +9,7 @@ export type Project = {
   github?: string;
   website?: string;
   download?: string;
-};
+}
 
 export async function getProjects(locale: string = 'en'): Promise<Project[]> {
   if (typeof window === 'undefined') {

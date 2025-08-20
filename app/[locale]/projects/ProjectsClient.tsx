@@ -7,7 +7,7 @@ import { Input } from '~/components/ui/input';
 import { Search, ExternalLink, AlertCircle, Filter, Code, Smartphone, Monitor, Package, Wrench } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { type Project, filterProjects } from '~/lib/projects';
+import { Project, filterProjects } from '~/lib/projects';
 
 const categoryIcons = {
   web: Code,

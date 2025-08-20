@@ -84,6 +84,7 @@
       "community": "Community",
       "articles": "Tech Articles",
       "projects": "Open Source",
+      "tools": "Tools",
       "developers": "Developers",
       "events": "Events",
       "jobs": "Job Board"
@@ -293,6 +294,48 @@
       "mid": "Mid-level Developer",
       "senior": "Senior Developer",
       "lead": "Lead Developer"
+    }
+  },
+  "toolsPage": {
+    "title": "Developer Tools",
+    "subtitle": "Useful Tools for Developers",
+    "description": "Discover and use helpful tools designed to make your development workflow more efficient. From code generators to utility converters, find the right tool for your needs.",
+    "searchPlaceholder": "Search tools...",
+    "filterAll": "All Tools",
+    "openTool": "Open Tool",
+    "noResults": "No tools found matching your criteria.",
+    "tryDifferentSearch": "Try adjusting your search or filters.",
+    "statistics": {
+      "totalTools": "Available Tools"
+    }
+  },
+  "tool": {
+    "base64": {
+      "title": "Base64 Encoder/Decoder",
+      "description": "Convert text to Base64 encoding or decode Base64 strings back to text",
+      "backToTools": "Back to Tools",
+      "plainTextInput": "Plain Text Input",
+      "base64Input": "Base64 Input",
+      "plainTextOutput": "Plain Text Output",
+      "base64Output": "Base64 Output",
+      "inputPlaceholder": "Enter plain text here...",
+      "base64Placeholder": "Enter Base64 string here...",
+      "resultPlaceholder": "Result will appear here...",
+      "encodeButton": "Encode to Base64",
+      "decodeButton": "Decode from Base64",
+      "swap": "Swap",
+      "copy": "Copy",
+      "inputDescription": "Enter the text you want to encode to Base64",
+      "base64InputDescription": "Enter the Base64 string you want to decode",
+      "outputDescription": "The Base64 encoded result",
+      "decodedOutputDescription": "The decoded plain text result",
+      "aboutTitle": "About Base64",
+      "aboutDescription": "Base64 is a binary-to-text encoding scheme that represents binary data in an ASCII string format. It's commonly used for encoding data in email, web URLs, and other text-based protocols.",
+      "aboutFeatures": {
+        "size": "Base64 encoding increases the size by approximately 33%",
+        "characters": "It uses A-Z, a-z, 0-9, +, / characters (64 total)",
+        "padding": "Padding with = characters is used when needed"
+      }
     }
   }
 }

@@ -2,7 +2,7 @@ import fs from 'fs';
 import path from 'path';
 import { Metadata } from 'next';
 
-export type Developer = {
+export interface Developer {
   id?: string;
   name: string;
   username?: string;
@@ -30,7 +30,7 @@ export type Developer = {
   experience?: 'junior' | 'mid' | 'senior' | 'lead';
   projects?: number;
   contributions?: number;
-};
+}
 
 export function getAllDevelopers(): Developer[] {
   const meDir = path.join(process.cwd(), 'app', '(me)');

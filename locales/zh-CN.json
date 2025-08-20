@@ -84,6 +84,7 @@
       "community": "社区",
       "articles": "技术文章",
       "projects": "开源项目",
+      "tools": "开发工具",
       "developers": "开发者",
       "events": "活动",
       "jobs": "工作机会"
@@ -293,6 +294,48 @@
       "mid": "中级开发者",
       "senior": "高级开发者",
       "lead": "技术负责人"
+    }
+  },
+  "toolsPage": {
+    "title": "开发工具",
+    "subtitle": "为开发者提供实用工具",
+    "description": "发现和使用专为提高开发工作流程效率而设计的实用工具。从代码生成器到实用转换器，找到适合您需求的正确工具。",
+    "searchPlaceholder": "搜索工具...",
+    "filterAll": "所有工具",
+    "openTool": "打开工具",
+    "noResults": "未找到符合条件的工具。",
+    "tryDifferentSearch": "请尝试调整搜索条件或筛选器。",
+    "statistics": {
+      "totalTools": "可用工具"
+    }
+  },
+  "tool": {
+    "base64": {
+      "title": "Base64 编码/解码工具",
+      "description": "将文本转换为 Base64 编码，或将 Base64 字符串解码为文本",
+      "backToTools": "返回工具列表",
+      "plainTextInput": "纯文本输入",
+      "base64Input": "Base64 输入",
+      "plainTextOutput": "纯文本输出",
+      "base64Output": "Base64 输出",
+      "inputPlaceholder": "在此输入纯文本...",
+      "base64Placeholder": "在此输入 Base64 字符串...",
+      "resultPlaceholder": "结果将在这里显示...",
+      "encodeButton": "编码为 Base64",
+      "decodeButton": "从 Base64 解码",
+      "swap": "交换",
+      "copy": "复制",
+      "inputDescription": "输入您要编码为 Base64 的文本",
+      "base64InputDescription": "输入您要解码的 Base64 字符串",
+      "outputDescription": "Base64 编码结果",
+      "decodedOutputDescription": "解码后的纯文本结果",
+      "aboutTitle": "关于 Base64",
+      "aboutDescription": "Base64 是一种二进制到文本的编码方案，以 ASCII 字符串格式表示二进制数据。它常用于电子邮件、网页 URL 和其他基于文本的协议中的数据编码。",
+      "aboutFeatures": {
+        "size": "Base64 编码会使数据大小增加约 33%",
+        "characters": "使用 A-Z、a-z、0-9、+、/ 字符（共 64 个）",
+        "padding": "需要时使用 = 字符进行填充"
+      }
     }
   }
 }

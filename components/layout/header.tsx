@@ -29,6 +29,7 @@ export default function Header() {
     { name: t('header.navigation.community'), href: '/discord' },
     // { name: t('header.navigation.articles'), href: '/articles' },
     { name: t('header.navigation.projects'), href: '/projects' },
+    { name: t('header.navigation.tools'), href: '/tools' },
     { name: t('header.navigation.developers'), href: '/developers' },
     // { name: t('header.navigation.events'), href: '/events' },
     { name: t('layout.github'), href: 'https://github.com/gentleman-org/antfe' },
