@@ -37,8 +37,7 @@ export default function Header() {
 
   return (
     <>
-      <header
-        className={`sticky top-0 right-0 left-0 z-50 transition-all duration-700 ease-out ${isScrolled ? 'liquid-glass-header-scrolled backdrop-blur-md' : 'liquid-glass-header'} `}>
+      <header className={`sticky top-0 right-0 left-0 z-50 backdrop-blur-md transition-all duration-700 ease-out`}>
         {/* Dynamic rainbow light */}
         <div className="through-purple-500/60 absolute top-0 right-0 left-0 h-px animate-pulse bg-gradient-to-r from-transparent via-blue-500/60 to-transparent" />
 
