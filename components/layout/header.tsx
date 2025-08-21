@@ -37,7 +37,7 @@ export default function Header() {
 
   return (
     <>
-      <header className={`sticky top-0 right-0 left-0 z-50 transition-all duration-700 ease-out ${isScrolled ? 'liquid-glass-header-scrolled' : 'liquid-glass-header'} `}>
+      <header className={`sticky top-0 right-0 left-0 z-50 backdrop-blur-md transition-all duration-700 ease-out`}>
         {/* Dynamic rainbow light */}
         <div className="through-purple-500/60 absolute top-0 right-0 left-0 h-px animate-pulse bg-gradient-to-r from-transparent via-blue-500/60 to-transparent" />
 
@@ -80,7 +80,7 @@ export default function Header() {
                         } `}>
                         {item.name}
                         {isActive && (
-                          <div className="liquid-indicator absolute -bottom-1 left-1/2 h-0.5 w-6 -translate-x-1/2 rounded-full bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500" />
+                          <div className="liquid-indicator absolute -bottom-1 left-1/2 h-0.5 w-2/3 rounded-full bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500" />
                         )}
                       </Link>
                     );
