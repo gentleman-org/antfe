@@ -4,5 +4,12 @@
     "description": "base64 编码解码",
     "url": "/tool/base64",
     "icon": ""
+  },
+  {
+    "name": "nested-chat-generator",
+    "description": "生成自定义嵌套聊天截图，支持多层嵌套、背景、头像和消息定制",
+    "url": "/tool/nested-chat-generator",
+    "icon": "💬",
+    "category": ["图像", "社交"]
   }
 ]

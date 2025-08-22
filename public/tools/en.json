@@ -4,5 +4,12 @@
     "description": "base64 encode and decode",
     "url": "/tool/base64",
     "icon": ""
+  },
+  {
+    "name": "nested-chat-generator",
+    "description": "Generate customizable nested chat screenshots with multiple layers, backgrounds, avatars, and messages",
+    "url": "/tool/nested-chat-generator",
+    "icon": "💬",
+    "category": ["image", "social"]
   }
 ]
