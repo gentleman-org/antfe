@@ -1,0 +1,20 @@
+{
+  "name": "fan",
+  "avatar": "https://avatars.githubusercontent.com/u/53250672?v=4",
+  "bio": "Be a simple, low-key and romantic technical person.",
+  "location": "China",
+  "company": "AntFE",
+  "position": "Senior Software Engineer",
+  "skills": ["JavaScript", "TypeScript", "React", "Next.js", "Node.js", "Docker", "Unocss"],
+  "links": {
+    "github": "https://github.com/fzzv",
+    "website": "https://xyu.fan"
+  },
+  "rss": "https://blog.xyu.fan/rss.xml",
+  "seo": {
+    "title": "fan - Be a simple, low-key and romantic technical person.",
+    "description": "Be a simple, low-key and romantic technical person.",
+    "keywords": "fan"
+  },
+  "joinedAt": "2025-08-08"
+}
