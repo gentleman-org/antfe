@@ -129,5 +129,17 @@
     "github": "https://github.com/aibayanyu20/mock-h3",
     "website": "https://juejin.cn/post/7539837953901723674",
     "download": ""
+  },
+  {
+    "id": 12,
+    "name": "vue-markdown-render",
+    "cover": "",
+    "description": "体验高性能流式 Markdown 渲染的强大力量！",
+    "category": ["web", "open source"],
+    "status": "active",
+    "technologies": ["Vue", "TypeScript", "Markdown"],
+    "github": "https://github.com/Simon-He95/vue-markdown-render",
+    "website": "https://vue-markdown-renderer.netlify.app/",
+    "download": ""
   }
 ]
