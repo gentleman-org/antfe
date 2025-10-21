@@ -1,0 +1,18 @@
+{
+  "name": "Qinghuan",
+  "avatar": "https://avatars.githubusercontent.com/u/57350339?v=4",
+  "bio": "喜欢追求技术，热爱开发各种小玩具，热衷学习并分享各种知识，变成一位开发糕手 :)",
+  "location": "China",
+  "company": "AntFE",
+  "position": "Senior Software Engineer",
+  "skills": ["JavaScript", "TypeScript", "React", "Next.js", "Node.js"],
+  "links": {
+    "github": "https://github.com/Asaki-M"
+  },
+  "seo": {
+    "title": "Qinghuan - 喜欢追求技术，热爱开发各种小玩具，热衷学习并分享各种知识，变成一位开发糕手 :)",
+    "description": "喜欢追求技术，热爱开发各种小玩具，热衷学习并分享各种知识，变成一位开发糕手 :)",
+    "keywords": "Qinghuan"
+  },
+  "joinedAt": "2025-08-08"
+}
