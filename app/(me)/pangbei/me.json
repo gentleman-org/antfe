@@ -1,0 +1,20 @@
+{
+  "name": "Pangbei",
+  "avatar": "https://avatars.githubusercontent.com/u/29727848?v=4",
+  "bio": "Be a simple, low-key and romantic technical person.",
+  "location": "China",
+  "company": "AntFE",
+  "position": "Senior Software Engineer",
+  "skills": ["JavaScript", "TypeScript", "Vue", "NestJS", "Nuxt", "Unocss"],
+  "links": {
+    "github": "https://github.com/myltx",
+    "website": "https://me.myltx.top/"
+  },
+  "rss": "",
+  "seo": {
+    "title": "myltx - Be a simple, low-key and romantic technical person.",
+    "description": "Be a simple, low-key and romantic technical person.",
+    "keywords": "myltx"
+  },
+  "joinedAt": "2025-08-08"
+}
