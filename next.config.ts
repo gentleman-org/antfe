@@ -14,6 +14,14 @@ const withSerwist = withSerwistInit({
 });
 
 const withNextIntl = createNextIntlPlugin('./lib/i18n/request.ts');
+const allowedDevOrigins = Array.from(
+  new Set([
+    '192.168.110.109',
+    ...(process.env.NEXT_ALLOWED_DEV_ORIGINS?.split(',')
+      .map((origin) => origin.trim())
+      .filter(Boolean) ?? []),
+  ])
+);
 
 // 配置 MDX
 const withMDX = createMDX({
@@ -26,6 +34,7 @@ const withMDX = createMDX({
 const nextConfig: NextConfig = {
   /* config options here */
   reactStrictMode: true,
+  allowedDevOrigins,
   // 支持 .mdx 文件扩展名
   pageExtensions: ['js', 'jsx', 'mdx', 'ts', 'tsx'],
   // experimental features

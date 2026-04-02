@@ -24,7 +24,7 @@ export async function invalidateData(tagOrPath: string, isPath: boolean = false)
   if (isPath) {
     revalidatePath(tagOrPath);
   } else {
-    revalidateTag(tagOrPath);
+    revalidateTag(tagOrPath, 'max');
   }
 }
 

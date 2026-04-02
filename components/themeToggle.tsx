@@ -1,20 +1,24 @@
 'use client';
 
 import { Moon, Sun } from 'lucide-react';
-import { useState, useEffect } from 'react';
+import { useSyncExternalStore } from 'react';
 import { useTranslations } from 'next-intl';
 import { Button } from '~/components/ui/button';
 import { useTheme } from '~/components/provider/themeProvider';
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from '~/components/ui/dropdown-menu';
 
+function subscribe() {
+  return () => {};
+}
+
 export function ThemeToggle() {
   const { theme: currentTheme, setTheme, resolvedTheme } = useTheme();
-  const [mounted, setMounted] = useState(false);
+  const mounted = useSyncExternalStore(
+    subscribe,
+    () => true,
+    () => false
+  );
   const t = useTranslations('theme');
-
-  useEffect(() => {
-    setMounted(true);
-  }, []);
 
   if (!mounted) {
     return (
