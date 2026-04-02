@@ -85,6 +85,7 @@
       "articles": "技术文章",
       "projects": "开源项目",
       "tools": "开发工具",
+      "ai": "AI",
       "developers": "开发者",
       "events": "活动",
       "jobs": "工作机会"
@@ -307,6 +308,50 @@
     "tryDifferentSearch": "请尝试调整搜索条件或筛选器。",
     "statistics": {
       "totalTools": "可用工具"
+    }
+  },
+  "aiPage": {
+    "title": "AI 导航",
+    "subtitle": "工具、技巧与 Tokens 分发信息",
+    "description": "集中整理社区常用的 AI 资源，帮助大家更快找到趁手工具并降低试错成本。",
+    "notice": "以下信息由群友共享，可能随时间变化，请自行验证可用性、价格与合规性。",
+    "sections": {
+      "tools": {
+        "title": "AI 工具推荐",
+        "description": "从通用助手到编码和检索，这些工具覆盖日常高频场景。",
+        "visit": "访问"
+      },
+      "tips": {
+        "title": "AI 实用技巧",
+        "description": "让回答更准、更稳、更可复用的常见做法。"
+      },
+      "tokens": {
+        "title": "AI Tokens 分发",
+        "description": "群友维护的 AI 中转站清单，按商业和公益两类展示。",
+        "linkLabel": "链接",
+        "supportedLabel": "支持类别",
+        "complianceHint": "请勿提交敏感数据，接入前请确认隐私策略、计费规则与服务条款。",
+        "submit": {
+          "badge": "社区共建",
+          "title": "提交中转站信息",
+          "description": "欢迎群友补充新站点或更新旧信息。当前先通过 Discord 提交，后续可无缝替换为飞书/问卷链接。",
+          "primaryCta": "去 Discord 提交",
+          "templateTitle": "建议提交字段",
+          "templateFields": {
+            "name": "站点名称 + 类型（商业 / 公益）",
+            "models": "支持模型与调用方式",
+            "pricing": "价格、免费额度或限额规则",
+            "contact": "联系方式（昵称、群号或频道）",
+            "notes": "备注（并发、限流、白名单、可用时段）"
+          }
+        },
+        "public": {
+          "title": "公益"
+        },
+        "commercial": {
+          "title": "商业"
+        }
+      }
     }
   },
   "tool": {

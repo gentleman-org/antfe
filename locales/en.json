@@ -85,6 +85,7 @@
       "articles": "Tech Articles",
       "projects": "Open Source",
       "tools": "Tools",
+      "ai": "AI",
       "developers": "Developers",
       "events": "Events",
       "jobs": "Job Board"
@@ -307,6 +308,50 @@
     "tryDifferentSearch": "Try adjusting your search or filters.",
     "statistics": {
       "totalTools": "Available Tools"
+    }
+  },
+  "aiPage": {
+    "title": "AI Navigator",
+    "subtitle": "Tools, practical tips, and token relay listings",
+    "description": "A curated collection of AI resources shared in the community to help members move faster with less trial and error.",
+    "notice": "These entries are community-contributed and may change over time. Please verify availability, pricing, and compliance on your own.",
+    "sections": {
+      "tools": {
+        "title": "AI Tool Recommendations",
+        "description": "From general assistants to coding and retrieval, these tools cover common daily workflows.",
+        "visit": "Visit"
+      },
+      "tips": {
+        "title": "Practical AI Tips",
+        "description": "Common techniques that make outputs more accurate, stable, and reusable."
+      },
+      "tokens": {
+        "title": "AI Tokens Distribution",
+        "description": "Community-managed AI relay stations, grouped by commercial and public-interest services.",
+        "linkLabel": "Link",
+        "supportedLabel": "Supported",
+        "complianceHint": "Do not send sensitive data. Review privacy policy, billing rules, and service terms before integration.",
+        "submit": {
+          "badge": "Community Co-build",
+          "title": "Submit a Relay Listing",
+          "description": "Members can add new relays or update existing records. For now, submissions go through Discord and can later be switched to a form link.",
+          "primaryCta": "Submit via Discord",
+          "templateTitle": "Suggested Submission Fields",
+          "templateFields": {
+            "name": "Relay name + type (commercial/public-interest)",
+            "models": "Supported models and access method",
+            "pricing": "Pricing, free quota, or rate limits",
+            "contact": "Contact handle (nickname, group, or channel)",
+            "notes": "Notes (concurrency, throttling, whitelist, uptime window)"
+          }
+        },
+        "public": {
+          "title": "Public-Interest"
+        },
+        "commercial": {
+          "title": "Commercial"
+        }
+      }
     }
   },
   "tool": {

@@ -1,0 +1,97 @@
+{
+  "tools": [
+    {
+      "id": "chatgpt",
+      "name": "ChatGPT",
+      "description": "通用 AI 助手，适合写作、总结、代码分析与方案讨论。",
+      "url": "https://chatgpt.com"
+    },
+    {
+      "id": "claude",
+      "name": "Claude",
+      "description": "长文本处理能力强，适合文档整理、规范校对与深度问答。",
+      "url": "https://claude.ai"
+    },
+    {
+      "id": "gemini",
+      "name": "Gemini",
+      "description": "与 Google 生态联动方便，适合检索、办公和多模态任务。",
+      "url": "https://gemini.google.com"
+    },
+    {
+      "id": "perplexity",
+      "name": "Perplexity",
+      "description": "搜索增强型 AI，适合快速查资料并定位来源链接。",
+      "url": "https://www.perplexity.ai"
+    },
+    {
+      "id": "cursor",
+      "name": "Cursor",
+      "description": "面向开发者的 AI IDE，适合代码重构、补全和项目级问答。",
+      "url": "https://cursor.com"
+    },
+    {
+      "id": "midjourney",
+      "name": "Midjourney",
+      "description": "高质量图像生成工具，适合封面图、概念图与视觉探索。",
+      "url": "https://www.midjourney.com"
+    }
+  ],
+  "tips": [
+    {
+      "id": "contextFirst",
+      "title": "先给上下文，再提要求",
+      "description": "把目标、受众、约束和已有材料一次说清，减少模型误判。"
+    },
+    {
+      "id": "structuredOutput",
+      "title": "要求结构化输出",
+      "description": "明确让 AI 用表格、清单或 JSON 返回，方便后续复制和检查。"
+    },
+    {
+      "id": "clarifyQuestion",
+      "title": "让 AI 先反问 3 个澄清问题",
+      "description": "需求不完整时先补齐信息，再进入正式生成，质量提升明显。"
+    },
+    {
+      "id": "splitTask",
+      "title": "大任务拆成多轮小任务",
+      "description": "先让 AI 出提纲，再逐段生成与修订，稳定性比一次性输出更高。"
+    },
+    {
+      "id": "doubleCheck",
+      "title": "关键结果必须二次校验",
+      "description": "涉及代码、数据或事实时，用文档、测试或搜索交叉验证。"
+    }
+  ],
+  "tokens": {
+    "public": [
+      {
+        "id": "missblog",
+        "name": "代码花园",
+        "url": "https://api.missblog.net",
+        "categories": "OpenAI"
+      },
+      {
+        "id": "suanlba",
+        "name": "CC直冲",
+        "url": "https://suanlba.dev/",
+        "categories": "OpenAI / Claude / GLM"
+      },
+      {
+        "id": "996router",
+        "name": "996router",
+        "url": "https://newapi.996router.com",
+        "categories": "OpenAI"
+      }
+    ],
+    "commercial": [
+      {
+        "id": "letai",
+        "name": "LetAI Run",
+        "url": "https://letai.run",
+        "categories": "OpenAI / Anthropic / Gemini"
+      }
+    ]
+  }
+}

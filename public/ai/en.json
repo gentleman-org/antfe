@@ -1,0 +1,97 @@
+{
+  "tools": [
+    {
+      "id": "chatgpt",
+      "name": "ChatGPT",
+      "description": "General-purpose assistant for writing, summarization, code analysis, and solution discussion.",
+      "url": "https://chatgpt.com"
+    },
+    {
+      "id": "claude",
+      "name": "Claude",
+      "description": "Strong with long-context tasks, ideal for document processing and deep Q&A.",
+      "url": "https://claude.ai"
+    },
+    {
+      "id": "gemini",
+      "name": "Gemini",
+      "description": "Convenient integration with Google ecosystem for search, office tasks, and multimodal work.",
+      "url": "https://gemini.google.com"
+    },
+    {
+      "id": "perplexity",
+      "name": "Perplexity",
+      "description": "Search-augmented AI for quick research with source links.",
+      "url": "https://www.perplexity.ai"
+    },
+    {
+      "id": "cursor",
+      "name": "Cursor",
+      "description": "AI-first IDE for refactoring, completion, and project-level coding assistance.",
+      "url": "https://cursor.com"
+    },
+    {
+      "id": "midjourney",
+      "name": "Midjourney",
+      "description": "High-quality image generation for covers, concept art, and visual ideation.",
+      "url": "https://www.midjourney.com"
+    }
+  ],
+  "tips": [
+    {
+      "id": "contextFirst",
+      "title": "Provide context before asking for output",
+      "description": "State goals, audience, constraints, and existing material up front to reduce model drift."
+    },
+    {
+      "id": "structuredOutput",
+      "title": "Request structured output",
+      "description": "Ask for table/list/JSON formats so results are easier to copy, parse, and review."
+    },
+    {
+      "id": "clarifyQuestion",
+      "title": "Ask AI to raise 3 clarifying questions first",
+      "description": "When requirements are fuzzy, resolve ambiguity before generation for better quality."
+    },
+    {
+      "id": "splitTask",
+      "title": "Split large tasks into multiple rounds",
+      "description": "Generate outline first, then draft and revise section by section for higher consistency."
+    },
+    {
+      "id": "doubleCheck",
+      "title": "Double-check critical outputs",
+      "description": "For code, data, or factual claims, validate with docs, tests, or reliable search."
+    }
+  ],
+  "tokens": {
+    "public": [
+      {
+        "id": "missblog",
+        "name": "代码花园",
+        "url": "https://api.missblog.net",
+        "categories": "OpenAI"
+      },
+      {
+        "id": "suanlba",
+        "name": "CC直冲",
+        "url": "https://suanlba.dev/",
+        "categories": "OpenAI / Claude / GLM"
+      },
+      {
+        "id": "996router",
+        "name": "996router",
+        "url": "https://newapi.996router.com",
+        "categories": "OpenAI"
+      }
+    ],
+    "commercial": [
+      {
+        "id": "letai",
+        "name": "LetAI Run",
+        "url": "https://letai.run",
+        "categories": "OpenAI / Anthropic / Gemini"
+      }
+    ]
+  }
+}

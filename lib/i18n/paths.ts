@@ -16,6 +16,7 @@ export const i18nPaths = [
   '/sign-up', // Sign-up page
   '/discord', // Discord page
   '/projects', // Projects showcase page
+  '/ai', // AI resources page
   '/developers', // Developers list page
   // Add any other top-level i18n paths here.
   // For example: '/contact', '/pricing'
