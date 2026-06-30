@@ -141,5 +141,29 @@
     "github": "https://github.com/Simon-He95/vue-markdown-render",
     "website": "https://vue-markdown-renderer.netlify.app/",
     "download": ""
+  },
+  {
+    "id": 13,
+    "name": "openagents",
+    "cover": "https://github.com/openagents-org/openagents/raw/develop/docs/assets/images/workspace_cover.jpg",
+    "description": "一个工作空间，所有 AI 代理在此协作，面向智能体的协作操作系统！",
+    "category": ["Agent", "open source"],
+    "status": "active",
+    "technologies": ["Python", "TypeScript"],
+    "github": "https://github.com/openagents-org/openagents",
+    "website": "https://openagents.org/",
+    "download": ""
+  },
+  {
+    "id": 14,
+    "name": "clash-tui",
+    "cover": "",
+    "description": "Clash TUI 是面向 mihomo 的本地终端控制器",
+    "category": ["clash", "open source"],
+    "status": "active",
+    "technologies": ["rust"],
+    "github": "https://github.com/haokejie/clash-tui",
+    "website": "",
+    "download": ""
   }
 ]

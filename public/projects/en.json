@@ -141,5 +141,29 @@
     "github": "https://github.com/Simon-He95/vue-markdown-render",
     "website": "https://vue-markdown-renderer.netlify.app/",
     "download": ""
+  },
+  {
+    "id": 13,
+    "name": "openagents",
+    "cover": "https://github.com/openagents-org/openagents/raw/develop/docs/assets/images/workspace_cover.jpg",
+    "description": "One workspace where all your AI agents collaborate",
+    "category": ["Agent", "open source"],
+    "status": "active",
+    "technologies": ["Python", "TypeScript"],
+    "github": "https://github.com/openagents-org/openagents",
+    "website": "https://openagents.org/",
+    "download": ""
+  },
+  {
+    "id": 14,
+    "name": "clash-tui",
+    "cover": "",
+    "description": "Clash TUI is a local terminal controller for mihomo",
+    "category": ["clash", "open source"],
+    "status": "active",
+    "technologies": ["rust"],
+    "github": "https://github.com/haokejie/clash-tui",
+    "website": "",
+    "download": ""
   }
 ]
