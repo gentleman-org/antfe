@@ -36,7 +36,7 @@ const bubbleWidthByDepth = (depth: number): number => Math.max(MAX_CHILD_WIDTH, 
 const childPanelClassName = (mode: NestMode, childGap: string): string => {
   const baseClassName = `${childGap} relative rounded-[6px] py-3`;
 
-  return mode === 'bubble' ? `${baseClassName} border px-3` : `${baseClassName} px-0`;
+  return mode === 'bubble' ? `${baseClassName} border px-3` : `${baseClassName} px-0 pl-1`;
 };
 
 const renderAvatar = (layer: ChatLayer, depth: number): React.ReactNode => (

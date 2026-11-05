@@ -43,6 +43,30 @@ const createLayer = (index: number): ChatLayer => ({
   message: index === 0 ? '一群傻狗' : '',
 });
 
+const singlePresetLayers: ChatLayer[] = [
+  {
+    id: 'single-1',
+    avatar: '/logo.png',
+    nickname: '红烧粽子',
+    message: '一群傻狗',
+  },
+];
+
+const nestedPresetLayers: ChatLayer[] = [
+  {
+    id: 'nested-1',
+    avatar: '/logo.png',
+    nickname: '红烧粽子',
+    message: '',
+  },
+  {
+    id: 'nested-2',
+    avatar: '/logo.png',
+    nickname: '红烧粽子',
+    message: '一群傻狗',
+  },
+];
+
 export default function NestedChatGeneratorPage() {
   const canvasRef = useRef<HTMLDivElement>(null);
   const [themeName, setThemeName] = useState<ThemeName>('dark');
@@ -73,6 +97,16 @@ export default function NestedChatGeneratorPage() {
 
   const removeLayer = (id: string): void => {
     setLayers((currentLayers) => (currentLayers.length > 1 ? currentLayers.filter((layer) => layer.id !== id) : currentLayers));
+  };
+
+  const applySinglePreset = (): void => {
+    setNestMode('bubble');
+    setLayers(singlePresetLayers);
+  };
+
+  const applyNestedPreset = (): void => {
+    setNestMode('message');
+    setLayers(nestedPresetLayers);
   };
 
   const handleAvatarUpload = (layerId: string, file: File): void => {
@@ -136,6 +170,8 @@ export default function NestedChatGeneratorPage() {
               scale={scale}
               onThemeChange={setThemeName}
               onModeChange={setNestMode}
+              onSinglePreset={applySinglePreset}
+              onNestedPreset={applyNestedPreset}
               onScaleChange={setScale}
             />
             <LayerList layers={layers} onAddLayer={addLayer} onRemoveLayer={removeLayer} onUpdateLayer={updateLayer} onAvatarUpload={handleAvatarUpload} />

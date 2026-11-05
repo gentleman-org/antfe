@@ -15,6 +15,8 @@ interface StylePanelProps {
   scale: number;
   onThemeChange: (themeName: ThemeName) => void;
   onModeChange: (mode: NestMode) => void;
+  onSinglePreset: () => void;
+  onNestedPreset: () => void;
   onScaleChange: (scale: number) => void;
 }
 
@@ -46,7 +48,7 @@ const nextScale = (scale: number, direction: 'in' | 'out'): number => {
   return Math.min(MAX_SCALE, Math.max(MIN_SCALE, rawScale));
 };
 
-export function StylePanel({ themeName, themes, nestMode, nestModeLabels, scale, onThemeChange, onModeChange, onScaleChange }: StylePanelProps) {
+export function StylePanel({ themeName, themes, nestMode, nestModeLabels, scale, onThemeChange, onModeChange, onSinglePreset, onNestedPreset, onScaleChange }: StylePanelProps) {
   return (
     <Card className="gap-4 rounded-lg py-4">
       <CardHeader className="px-4">
@@ -56,6 +58,14 @@ export function StylePanel({ themeName, themes, nestMode, nestModeLabels, scale,
         </CardTitle>
       </CardHeader>
       <CardContent className="space-y-4 px-4">
+        <div className="grid grid-cols-2 gap-2">
+          <Button type="button" variant="outline" onClick={onSinglePreset} className="w-full">
+            案例一
+          </Button>
+          <Button type="button" variant="outline" onClick={onNestedPreset} className="w-full">
+            案例二
+          </Button>
+        </div>
         <div className="grid grid-cols-2 gap-2">
           {Object.entries(themes).map(([name, item]) => (
             <Button key={name} type="button" variant={themeName === name ? 'default' : 'outline'} onClick={() => onThemeChange(name as ThemeName)} className="w-full">
